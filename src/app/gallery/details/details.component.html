@@ -1,0 +1,40 @@
+<h1 class="backshadow"><i class="fa fa-picture-o" aria-hidden="true"></i><br>Gallery: {{ sample_caption }}</h1>
+
+<div id="details">
+
+    <!-- left col -->
+    <figure>
+        <a href="/gallery"><img src="{{ sample_src}}" alt="{{ sample_caption }}" title="{{ sample_caption }}"
+                class="thumbs shadow" *ngIf="!content_available"></a>
+        <a href="{{ sample_url }}" target="ngwin"><img src="{{ sample_src}}" alt="{{ sample_caption }}"
+                title="{{ sample_caption }}" class="thumbs shadow" *ngIf="content_available"></a>
+    </figure>
+
+    <!-- right col -->
+    <section>
+        <div>
+            <p>{{ sample_desc}}</p>
+            <ul>
+                <li><strong>Company</strong> : {{ sample_comp }}</li>
+                <li><strong>Year</strong> : {{ sample_year }}</li>
+                <li><strong>Project Type</strong> : {{ sample_type }}</li>
+                <li><strong>Arsenal</strong> : {{ sample_arsenal }}</li>
+            </ul>
+        </div>
+        <!-- <ng-container *ngIf="sample_url !== undefined && sample_url.indexOf('ikodit') !== -1 || sample_url.indexOf('kensington') !== -1 || sample_url.indexOf('google') !== -1">
+            <div>
+                <p>found match:<br>{{sample_url}}</p>
+            </div>
+        </ng-container>   -->
+        <div *ngIf="sample_url !== undefined">
+            <!-- <div *ngIf="sample_url.indexOf('ikodit') > -1" style="text-align:center;">
+                <p style="font-size:small;"><em>Content not transferred yet, please check back soon.</em></p>
+                <button disabled>GO</button>  
+            </div> -->
+            <p style="font-size:small; text-align:center;"><em>Content not available at this time.</em></p>
+
+        </div>
+        <br>
+    </section>
+
+</div>

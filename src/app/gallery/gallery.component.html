@@ -1,0 +1,16 @@
+<div id="search" class="shadow">
+   <form>
+       <input type="text" [(ngModel)]="term" name="term" placeholder="caption, company, year, project type or arsenal" class="rounded">
+   </form>
+</div>
+
+<h1 class="backshadow"><i class="fa fa-picture-o" aria-hidden="true"></i>
+    <!-- <br>Gallery -->
+</h1>
+
+<div id="gallery"> 
+    <figure *ngFor="let sample of samples | searchFilter:term">
+       <a class="backshadow" (click)="navigateTo( sample.id )"><img src="{{sample.src}}" alt="{{sample.caption}}" title="{{sample.caption}}" class="thumbs shadow">
+       <figcaption>{{sample.caption}}</figcaption></a>
+   </figure>   
+</div> 

@@ -1,0 +1,32 @@
+a.btn {
+   padding:1em;
+   text-decoration: none;
+   color:white;
+   /*background: #ef4a51;*/
+   background: #009eb3;
+   width:6em;
+   text-align: center;
+   margin: 0 auto;
+   display: block;
+   border-radius: 5px;
+   font-weight: normal;
+}
+ul {
+   padding:1em;
+}
+figure {
+   display:block;
+   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+   #details {
+       display:flex;
+   }
+}
+
+@media screen and (max-width: 768px)  {
+   .thumbs {
+       margin-left:-1em;
+   }
+}

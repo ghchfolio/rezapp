@@ -1,0 +1,9 @@
+#nglogo {
+   text-align: center;
+}
+
+#nglogo img {
+   width:3em;
+   height:auto;
+   border:none;
+}
