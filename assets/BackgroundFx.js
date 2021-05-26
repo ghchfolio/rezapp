@@ -122,7 +122,6 @@ function BackgroundFx() {
    }
 
    function Start() {
-      console.log('starting')
       if (!running) {
          running = true
          for (let i = 0; i < max_particles; i++) {

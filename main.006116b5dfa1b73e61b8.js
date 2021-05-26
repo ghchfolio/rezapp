@@ -301,7 +301,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h1 class=\"backshadow\"><i class=\"fa fa-home secondary-text-color\" aria-hidden=\"true\"></i>\n\t<!-- <br>My Portfolio -->\n</h1>\n\n<div id=\"cube_container\">\n\n\t<div id=\"box\">\n\n\t\t<!-- angular -->\n\t\t<div id=\"front\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\">\n\t\t\t\t<div style=\"position: relative;\">\n\t\t\t\t\t<a href=\"https://angular.io\" target=\"_blank\" style=\"position:absolute; top:20px;left:20px;\"><img src=\"https://angular.io/assets/images/logos/angular/angular.svg\" width=\"70\"\talt=\"angular logo\" title=\"www.angular.io\"></a>\n\t\t\t\t\t<a href=\"https://angular.io\" target=\"_blank\" style=\"position:absolute; bottom:20px; right:20px;\"><img src=\"https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg\" width=\"60\" alt=\"angularjs logo\" title=\"angularjs logo\"></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- html5/css/js logos -->\n\t\t<div id=\"back\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\" >\n\t\t\t\t<div style=\"position:relative;\">\n\t\t\t\t\t<a href=\"https://commons.wikimedia.org/wiki/File:HTML5_Badge.svg\" style=\"position:absolute; top:20px;left:20px;\"><img width=\"40\" alt=\"HTML5 icon\" title=\"HTML5 icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/64px-HTML5_Badge.svg.png\"></a>\n\t\t\t\t\t<a href=\"https://commons.wikimedia.org/wiki/File:Javascript-shield.svg\" ><img width=\"40\" alt=\"Javascript icon\" title=\"Javascript icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/64px-Javascript-shield.svg.png\"></a>\n\t\t\t\t\t<a href=\"https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg\" style=\"position:absolute; bottom:20px;right:20px;\"><img width=\"40\"  title=\"CSS3 icon\" alt=\"CSS3 icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/256px-CSS3_logo_and_wordmark.svg.png\"></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t\n\t\t<!-- firebase logo -->\n\t\t<div id=\"left\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\">\n\t\t\t\t<a title=\"firebase logo\" href=\"https://commons.wikimedia.org/wiki/File:Javascript-shield.svg\"><img width=\"120\" alt=\"firebase logo\" src=\"https://firebase.google.com/downloads/brand-guidelines/SVG/logo-standard.svg\"></a>\n\t\t\t\t<!-- <div></div> -->\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- nodejs logo -->\n\t\t<div id=\"right\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\">\n\t\t\t\t<img width=\"100\" src=\"https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg\"/>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div id=\"top\">\n\t\t\t<div class=\"bg\"></div>\n\t\t</div>\n\n\t\t<div id=\"bottom\">\n\t\t\t<div class=\"bg\"></div>\n\t\t</div>\n\n\t</div>\n\n</div>\n\n<section>\n\t<h2>Renovation Mode</h2>\n\t\n\t<p>Greetings, I am still in the process of updating my portfolio and upgrading to Angular 12. For now, the Gallery contains projects overviews and below is a summary of what I am currently doing.</p>\n</section>\n<br>\n\n<section>\n\t<h2>The Present</h2>\n\n\t<h3>Primary Role &amp; Responsibilities</h3>\n\t<ul>\n\t\t<li>Environment: <b>.Net</b></li>\n\t\t<li>Role: <b>UI Developer</b></li>\n\t\t<li>Library/framework: <b>AngularJS, Angular 5</b></li>\n\t\t<li>Responsibilities: Develop new UI features per the direction of the User Experience and Customer Experience decision makers </li>\n\t</ul>\n\n\t<h3>Secondary Role &amp; Responsibilities</h3>\n\t<ul>\n\t\t<li>Environment: <b>NodeJS</b></li>\n\t\t<li>Role: <b>UX Designer</b></li>\n\t\t<li>Library/framework: <b>Angular (latest)</b></li>\n\t\t<li>Wireframe/Mock-ups Programs: <b>Balsamiq, PhotoShop CC</b></li>\n\t\t<li>Responsibilities:  Create wireframes, low/high fidelity proof-of-concepts and update Sitecore CMS assets per request </li>\n\t</ul>\n\n\t<h3>Other Projects</h3>\n\t<ul>\n\t\t<li>A progressive web app which served short stories</li>\n\t\t<li>Library/framework: <b>Vanilla Javascript, Workbox (PWA), ParcelJS, NodeJS, Firebase</b></li>\n\t</ul>\n\n\t<h3>Certificates</h3>\n\t<ul>\n\t\t<li>Angular Progressive Web Apps (2019)</li>\n\t\t<li>Javascript Debugging Crash Course (2019)</li>\n\t\t<li>Javascript: Understanding the Weird Parts (2019)</li>\n\t</ul>\n\n\t<h3>Interested In</h3>\n\t<ul>\n\t\t<li>Angular projects (primarily) and exploring <u>simple</u> React/Vue/Svelte projects</li>\n\t\t<li>Working remotely</li>\n\t\t<li>Machine Learning</li>\n\t</ul>\n</section>\n<br>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<h1 class=\"backshadow\"><i class=\"fa fa-home secondary-text-color\" aria-hidden=\"true\"></i>\n\t<!-- <br>My Portfolio -->\n</h1>\n\n<div id=\"cube_container\">\n\n\t<div id=\"box\">\n\n\t\t<!-- angular -->\n\t\t<div id=\"front\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\">\n\t\t\t\t<div style=\"position: relative;\">\n\t\t\t\t\t<a href=\"https://angular.io\" target=\"_blank\" style=\"position:absolute; top:20px;left:20px;\"><img src=\"https://angular.io/assets/images/logos/angular/angular.svg\" width=\"70\"\talt=\"angular logo\" title=\"www.angular.io\"></a>\n\t\t\t\t\t<a href=\"https://angular.io\" target=\"_blank\" style=\"position:absolute; bottom:20px; right:20px;\"><img src=\"https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg\" width=\"60\" alt=\"angularjs logo\" title=\"angularjs logo\"></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- html5/css/js logos -->\n\t\t<div id=\"back\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\" >\n\t\t\t\t<div style=\"position:relative;\">\n\t\t\t\t\t<a href=\"https://commons.wikimedia.org/wiki/File:HTML5_Badge.svg\" style=\"position:absolute; top:20px;left:20px;\"><img width=\"40\" alt=\"HTML5 icon\" title=\"HTML5 icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/64px-HTML5_Badge.svg.png\"></a>\n\t\t\t\t\t<a href=\"https://commons.wikimedia.org/wiki/File:Javascript-shield.svg\" ><img width=\"40\" alt=\"Javascript icon\" title=\"Javascript icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/64px-Javascript-shield.svg.png\"></a>\n\t\t\t\t\t<a href=\"https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg\" style=\"position:absolute; bottom:20px;right:20px;\"><img width=\"40\"  title=\"CSS3 icon\" alt=\"CSS3 icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/256px-CSS3_logo_and_wordmark.svg.png\"></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t\n\t\t<!-- firebase logo -->\n\t\t<div id=\"left\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\">\n\t\t\t\t<a title=\"firebase logo\" href=\"https://commons.wikimedia.org/wiki/File:Javascript-shield.svg\"><img width=\"120\" alt=\"firebase logo\" src=\"https://firebase.google.com/downloads/brand-guidelines/SVG/logo-standard.svg\"></a>\n\t\t\t\t<!-- <div></div> -->\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- nodejs logo -->\n\t\t<div id=\"right\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\">\n\t\t\t\t<img width=\"100\" src=\"https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg\"/>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div id=\"top\">\n\t\t\t<div class=\"bg\"></div>\n\t\t</div>\n\n\t\t<div id=\"bottom\">\n\t\t\t<div class=\"bg\"></div>\n\t\t</div>\n\n\t</div>\n\n</div>\n\n<section>\n\t<h2>Renovation Mode</h2>\n\t\n\t<p>Greetings, I am still in the process of updating my portfolio and upgrading to Angular 12. For now, the Gallery contains projects overviews and below is a summary of what I am currently doing.</p>\n</section>\n<br>\n\n<section>\n\t<h2>The Present</h2>\n\n\t<h3>Primary Role &amp; Responsibilities</h3>\n\t<ul>\n\t\t<li>Environment: <b>.Net</b></li>\n\t\t<li>Role: <b>UI Developer</b></li>\n\t\t<li>Library/framework: <b>AngularJS, Angular 5</b></li>\n\t\t<li>Responsibilities: Develop new UI features per the direction of the User Experience and Customer Experience decision makers </li>\n\t</ul>\n\n\t<h3>Secondary Role &amp; Responsibilities</h3>\n\t<ul>\n\t\t<li>Environment: <b>NodeJS</b></li>\n\t\t<li>Role: <b>UX Designer</b></li>\n\t\t<li>Library/framework: <b>Angular (latest)</b></li>\n\t\t<li>Wireframe/Mock-ups Programs: <b>Balsamiq, PhotoShop CC</b></li>\n\t\t<li>Responsibilities:  Create wireframes, low/high fidelity proof-of-concepts and update Sitecore CMS assets per request </li>\n\t</ul>\n\n\t<h3>Other Projects</h3>\n\t<ul>\n\t\t<li>A progressive web app that served short stories using <b>Vanilla Javascript, Workbox (PWA), ParcelJS, NodeJS, Firebase</b></li>\n\t</ul>\n\n\t<h3>Certificates</h3>\n\t<ul>\n\t\t<li>Angular Progressive Web Apps (2019)</li>\n\t\t<li>Javascript Debugging Crash Course (2019)</li>\n\t\t<li>Javascript: Understanding the Weird Parts (2019)</li>\n\t</ul>\n\n\t<h3>Interested In</h3>\n\t<ul>\n\t\t<li>Angular projects (primarily) and exploring <u>simple</u> React/Vue/Svelte projects</li>\n\t\t<li>Working remotely</li>\n\t\t<li>Machine Learning</li>\n\t</ul>\n</section>\n<br>\n");
 
 /***/ }),
 
@@ -314,7 +314,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<footer class=\"backshadow\">&copy; {{ year }} My Portfolio <i class=\"fa fa-smile-o\" aria-hidden=\"true\"></i></footer>");
+/* harmony default export */ __webpack_exports__["default"] = ("<footer class=\"backshadow\">&copy; {{ year }} {{ appTitle }} <i class=\"fa fa-smile-o\" aria-hidden=\"true\"></i></footer>");
 
 /***/ }),
 
@@ -466,9 +466,14 @@ __webpack_require__.r(__webpack_exports__);
 
 let AppComponent = class AppComponent {
     constructor() {
-        this.title = 'ng8resume';
+        this.appTitle = 'CHFolio';
+        this.setPgTitle = SetWindowTitle;
+    }
+    ngOnInit() {
+        this.setPgTitle(this.appTitle);
     }
 };
+AppComponent.ctorParameters = () => [];
 AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
         selector: 'app-root',
@@ -490,7 +495,7 @@ AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"shadow\">\n  <div class=\"navgroup\">\n      <a routerLink=\"/home\" routerLinkActive=\"active\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> <span class=\"nav-text\">HOME</span></a>\n      <a routerLink=\"/gallery\" routerLinkActive=\"active\"><i class=\"fa fa-picture-o\" aria-hidden=\"true\"></i> <span class=\"nav-text\">GALLERY</span></a>\n      <a routerLink=\"/about\" routerLinkActive=\"active\"><i class=\"fa fa-user-circle-o\" aria-hidden=\"true\"></i> <span class=\"nav-text\">ABOUT</span></a>\n  </div>\n</nav> \n\n<div id=\"container\">     \n  <router-outlet></router-outlet>\n</div> \n\n<app-footer></app-footer> ");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"shadow\">\n  <div class=\"navgroup\">\n      <a routerLink=\"/home\" routerLinkActive=\"active\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> <span class=\"nav-text\">HOME</span></a>\n      <a routerLink=\"/gallery\" routerLinkActive=\"active\"><i class=\"fa fa-picture-o\" aria-hidden=\"true\"></i> <span class=\"nav-text\">GALLERY</span></a>\n      <a routerLink=\"/about\" routerLinkActive=\"active\"><i class=\"fa fa-user-circle-o\" aria-hidden=\"true\"></i> <span class=\"nav-text\">ABOUT</span></a>\n  </div>\n</nav> \n\n<div id=\"container\">     \n  <router-outlet></router-outlet>\n</div> \n\n<app-footer [appTitle]=\"appTitle\"></app-footer> ");
 
 /***/ }),
 
@@ -601,6 +606,7 @@ __webpack_require__.r(__webpack_exports__);
 
 let FooterComponent = class FooterComponent {
     constructor() {
+        this.appTitle = '';
         this.year = Number;
     }
     ngOnInit() {
@@ -608,7 +614,9 @@ let FooterComponent = class FooterComponent {
         this.year = this.date.getFullYear();
     }
 };
-FooterComponent.ctorParameters = () => [];
+FooterComponent.propDecorators = {
+    appTitle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
+};
 FooterComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
         selector: 'app-footer',
@@ -841,4 +849,4 @@ webpackEmptyAsyncContext.id = "zn8P";
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.4c3e6339951bdc92416b.js.map
+//# sourceMappingURL=main.006116b5dfa1b73e61b8.js.map

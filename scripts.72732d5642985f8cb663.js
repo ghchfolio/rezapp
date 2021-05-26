@@ -122,7 +122,6 @@ function BackgroundFx() {
    }
 
    function Start() {
-      console.log('starting')
       if (!running) {
          running = true
          for (let i = 0; i < max_particles; i++) {
@@ -143,5 +142,9 @@ function BackgroundFx() {
       setBackground: setBackgroundColor
    }
 }
+;function SetWindowTitle(str) {
+   var el = document.getElementById('appTitle');
+   el.textContent = str || 'Resume'
+}
 ;
-//# sourceMappingURL=scripts.c6ef75e76acd6f69ee09.js.map
+//# sourceMappingURL=scripts.72732d5642985f8cb663.js.map
