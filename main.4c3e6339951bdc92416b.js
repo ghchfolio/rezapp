@@ -91,16 +91,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _raw_loader_about_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./about.component.html */ "5TFM");
 /* harmony import */ var _about_component_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about.component.css */ "2Ic5");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _background_fx_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../background-fx.service */ "xQsp");
 
 
 
 
-// import { BackgroundFxService } from '../background-fx.service'
+
 let AboutComponent = class AboutComponent {
-    // constructor(private bgfxService: BackgroundFxService) { }
-    constructor() { }
+    constructor(bgfxService) {
+        this.bgfxService = bgfxService;
+    }
+    ngOnInit() {
+        this.bgfxService.setParticleColors(['#f9d2e0', '#f7bbd1', '#d81b60']);
+    }
 };
-AboutComponent.ctorParameters = () => [];
+AboutComponent.ctorParameters = () => [
+    { type: _background_fx_service__WEBPACK_IMPORTED_MODULE_4__["BackgroundFxService"] }
+];
 AboutComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
         selector: 'app-about',
@@ -127,13 +134,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _raw_loader_home_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./home.component.html */ "Gd4t");
 /* harmony import */ var _home_component_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home.component.css */ "RV7M");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _background_fx_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../background-fx.service */ "xQsp");
 
 
 
 
-// import { BackgroundFxService } from '../background-fx.service'
+
 let HomeComponent = class HomeComponent {
+    constructor(bgfxService) {
+        this.bgfxService = bgfxService;
+    }
+    ngOnInit() {
+        this.bgfxService.start();
+        this.bgfxService.setParticleColors(['#dddddd']);
+    }
 };
+HomeComponent.ctorParameters = () => [
+    { type: _background_fx_service__WEBPACK_IMPORTED_MODULE_4__["BackgroundFxService"] }
+];
 HomeComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
         selector: 'app-home',
@@ -183,8 +201,6 @@ __webpack_require__.r(__webpack_exports__);
 
 let DetailsComponent = class DetailsComponent {
     //todo use sample service
-    // constructor(
-    //     private route: ActivatedRoute, private samples_service: SamplesService, private http: HttpClient ){}
     constructor(route, http) {
         this.route = route;
         this.http = http;
@@ -318,19 +334,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "tyNb");
 /* harmony import */ var _samples_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../samples.service */ "N39F");
+/* harmony import */ var _background_fx_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../background-fx.service */ "xQsp");
 
 
 
 
 
 
-// import { BackgroundFxService } from '../background-fx.service';
+
 let GalleryComponent = class GalleryComponent {
-    // constructor(private _samples_service: SamplesService, private router: Router, private bgfxService: BackgroundFxService) {
-    // }
-    constructor(_samples_service, router) {
+    constructor(_samples_service, router, bgfxService) {
         this._samples_service = _samples_service;
         this.router = router;
+        this.bgfxService = bgfxService;
         this.type = 'all';
         this.content_available = false;
     }
@@ -341,13 +357,14 @@ let GalleryComponent = class GalleryComponent {
         this.router.navigate(['gallery/details/' + id]);
     }
     ngOnInit() {
-        // this.bgfxService.setParticleColors(['#b3f6ff', '#00cbe6']);
+        this.bgfxService.setParticleColors(['#b3f6ff', '#00cbe6']);
         this.getSamples();
     }
 };
 GalleryComponent.ctorParameters = () => [
     { type: _samples_service__WEBPACK_IMPORTED_MODULE_5__["SamplesService"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
+    { type: _background_fx_service__WEBPACK_IMPORTED_MODULE_6__["BackgroundFxService"] }
 ];
 GalleryComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
@@ -732,6 +749,48 @@ AppRoutingModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /***/ }),
 
+/***/ "xQsp":
+/*!******************************************!*\
+  !*** ./src/app/background-fx.service.ts ***!
+  \******************************************/
+/*! exports provided: BackgroundFxService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BackgroundFxService", function() { return BackgroundFxService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+
+let BackgroundFxService = class BackgroundFxService {
+    constructor() {
+        this.fx = new BackgroundFx();
+    }
+    start() {
+        this.fx.start();
+    }
+    stop() {
+        this.fx.stop();
+    }
+    setParticleColors(val) {
+        this.fx.setParticleColors(val);
+    }
+    setBackground(val) {
+        this.fx.setBackground(val);
+    }
+};
+BackgroundFxService.ctorParameters = () => [];
+BackgroundFxService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], BackgroundFxService);
+
+
+
+/***/ }),
+
 /***/ "zUnb":
 /*!*********************!*\
   !*** ./src/main.ts ***!
@@ -782,4 +841,4 @@ webpackEmptyAsyncContext.id = "zn8P";
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.9ec1e49c30a62758e78a.js.map
+//# sourceMappingURL=main.4c3e6339951bdc92416b.js.map
