@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params }   from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { SamplesService } from '../../samples.service';
 
 @Component({
     selector: 'app-details-component',
@@ -10,29 +9,27 @@ import { SamplesService } from '../../samples.service';
 })
 
 export class DetailsComponent implements OnInit {
-    
-    samples:any;
-    sample:any;
-    id:any;
 
-    sample_src:any;
-    sample_caption:any;
-    sample_url:any;
-    sample_desc:any;
-    sample_arsenal:any;
-    sample_year:any;
-    sample_comp:any;
-    sample_type:any;
+    samples: any;
+    sample: any;
+    id: any;
+
+    sample_src: any;
+    sample_caption: any;
+    sample_url: any;
+    sample_desc: any;
+    sample_arsenal: any;
+    sample_year: any;
+    sample_comp: any;
+    sample_type: any;
     content_available = false;
 
-  //todo use sample service
-  
-    // constructor(
-    //     private route: ActivatedRoute, private samples_service: SamplesService, private http: HttpClient ){}
-    constructor(
-        private route: ActivatedRoute, private http: HttpClient ){}
+    //todo use sample service
 
-    parseData(){
+    constructor(
+        private route: ActivatedRoute, private http: HttpClient) { }
+
+    parseData() {
         this.sample_src = this.sample.src;
         this.sample_caption = this.sample.caption;
         this.sample_url = this.sample.url;
@@ -43,16 +40,16 @@ export class DetailsComponent implements OnInit {
         this.sample_type = this.sample.type;
     }
 
-    getSampleById () {
+    getSampleById() {
         this.http.get('assets/samples.json').subscribe(server_data => {
             this.samples = server_data;
-            this.sample = this.samples.find((item:any) => item.id === this.id);
+            this.sample = this.samples.find((item: any) => item.id === this.id);
             this.parseData();
         });
     }
 
     getId() {
-        this.route.params.subscribe( params => {
+        this.route.params.subscribe(params => {
             this.id = params['id'];
             this.getSampleById();
         })
@@ -62,5 +59,5 @@ export class DetailsComponent implements OnInit {
     ngOnInit() {
         this.getId();
     }
-    
+
 }

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-declare var shapeFx: any;
+declare var BackgroundFx: any;
 
 @Injectable({
    providedIn: 'root'
@@ -8,27 +8,25 @@ declare var shapeFx: any;
 
 export class BackgroundFxService {
 
-   _shapeFx: any;
+   fx: any;
    constructor() {
-      this._shapeFx = shapeFx;
-      console.log(shapeFx)
-      // return this._shapeFx;
+      this.fx = new BackgroundFx();
    }
 
    start() {
-      this._shapeFx.start();
+      this.fx.start();
    }
 
    stop() {
-      this._shapeFx.stop();
+      this.fx.stop();
    }
 
    setParticleColors(val:any) {
-      this._shapeFx.setParticleColors(val);
+      this.fx.setParticleColors(val);
    }
 
    setBackground(val:any) {
-      this._shapeFx.setBackground(val);
+      this.fx.setBackground(val);
    }
 
 }

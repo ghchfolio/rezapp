@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { BackgroundFxService } from '../background-fx.service'
+import { BackgroundFxService } from '../background-fx.service'
 
 @Component({
    selector: 'app-about',
@@ -8,12 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
-   // constructor(private bgfxService: BackgroundFxService) { }
-   constructor() {}
+   constructor(private bgfxService: BackgroundFxService) {}
 
-
-   // ngOnInit() {
-   //    this.bgfxService.setParticleColors(['#f9d2e0', '#f7bbd1', '#d81b60']);
-   // }
+   ngOnInit() {
+      this.bgfxService.setParticleColors(['#f9d2e0', '#f7bbd1', '#d81b60']);
+   }
 
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SamplesService } from '../samples.service';
-// import { BackgroundFxService } from '../background-fx.service';
+import { BackgroundFxService } from '../background-fx.service';
 
 @Component({
    selector: 'app-gallery',
@@ -16,9 +16,7 @@ export class GalleryComponent implements OnInit {
    term: any;
    content_available = false;
 
-   // constructor(private _samples_service: SamplesService, private router: Router, private bgfxService: BackgroundFxService) {
-   // }
-   constructor(private _samples_service: SamplesService, private router: Router) {
+   constructor(private _samples_service: SamplesService, private router: Router, private bgfxService: BackgroundFxService) {
    }
 
    getSamples() {
@@ -30,7 +28,7 @@ export class GalleryComponent implements OnInit {
    }
 
    ngOnInit() {
-      // this.bgfxService.setParticleColors(['#b3f6ff', '#00cbe6']);
+      this.bgfxService.setParticleColors(['#b3f6ff', '#00cbe6']);
       this.getSamples();
    }
 

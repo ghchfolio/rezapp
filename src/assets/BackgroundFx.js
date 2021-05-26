@@ -1,5 +1,4 @@
-let shapeFx = (function () {
-   alert('fx in assets folder')
+function BackgroundFx() {
    let bg_color = '#f0f0f0',
       particle_colors = ['#dddddd'],
       max_particles = 50,
@@ -143,4 +142,4 @@ let shapeFx = (function () {
       setParticleColors: SetParticleColors,
       setBackground: setBackgroundColor
    }
-})();
+}
