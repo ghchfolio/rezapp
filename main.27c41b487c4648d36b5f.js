@@ -132,10 +132,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
 /* harmony import */ var _raw_loader_home_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./home.component.html */ "Gd4t");
-/* harmony import */ var _home_component_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home.component.css */ "RV7M");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _background_fx_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../background-fx.service */ "xQsp");
-
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _background_fx_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../background-fx.service */ "xQsp");
 
 
 
@@ -150,13 +148,12 @@ let HomeComponent = class HomeComponent {
     }
 };
 HomeComponent.ctorParameters = () => [
-    { type: _background_fx_service__WEBPACK_IMPORTED_MODULE_4__["BackgroundFxService"] }
+    { type: _background_fx_service__WEBPACK_IMPORTED_MODULE_3__["BackgroundFxService"] }
 ];
 HomeComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
         selector: 'app-home',
-        template: _raw_loader_home_component_html__WEBPACK_IMPORTED_MODULE_1__["default"],
-        styles: [_home_component_css__WEBPACK_IMPORTED_MODULE_2__["default"]]
+        template: _raw_loader_home_component_html__WEBPACK_IMPORTED_MODULE_1__["default"]
     })
 ], HomeComponent);
 
@@ -301,7 +298,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h1 class=\"backshadow\"><i class=\"fa fa-home secondary-text-color\" aria-hidden=\"true\"></i>\n\t<!-- <br>My Portfolio -->\n</h1>\n\n<div id=\"cube_container\">\n\n\t<div id=\"box\">\n\n\t\t<!-- angular -->\n\t\t<div id=\"front\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\">\n\t\t\t\t<div style=\"position: relative;\">\n\t\t\t\t\t<a href=\"https://angular.io\" target=\"_blank\" style=\"position:absolute; top:20px;left:20px;\"><img src=\"https://angular.io/assets/images/logos/angular/angular.svg\" width=\"70\"\talt=\"angular logo\" title=\"www.angular.io\"></a>\n\t\t\t\t\t<a href=\"https://angular.io\" target=\"_blank\" style=\"position:absolute; bottom:20px; right:20px;\"><img src=\"https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg\" width=\"60\" alt=\"angularjs logo\" title=\"angularjs logo\"></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- html5/css/js logos -->\n\t\t<div id=\"back\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\" >\n\t\t\t\t<div style=\"position:relative;\">\n\t\t\t\t\t<a href=\"https://commons.wikimedia.org/wiki/File:HTML5_Badge.svg\" style=\"position:absolute; top:20px;left:20px;\"><img width=\"40\" alt=\"HTML5 icon\" title=\"HTML5 icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/64px-HTML5_Badge.svg.png\"></a>\n\t\t\t\t\t<a href=\"https://commons.wikimedia.org/wiki/File:Javascript-shield.svg\" ><img width=\"40\" alt=\"Javascript icon\" title=\"Javascript icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/64px-Javascript-shield.svg.png\"></a>\n\t\t\t\t\t<a href=\"https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg\" style=\"position:absolute; bottom:20px;right:20px;\"><img width=\"40\"  title=\"CSS3 icon\" alt=\"CSS3 icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/256px-CSS3_logo_and_wordmark.svg.png\"></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t\n\t\t<!-- firebase logo -->\n\t\t<div id=\"left\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\">\n\t\t\t\t<a title=\"firebase logo\" href=\"https://commons.wikimedia.org/wiki/File:Javascript-shield.svg\"><img width=\"120\" alt=\"firebase logo\" src=\"https://firebase.google.com/downloads/brand-guidelines/SVG/logo-standard.svg\"></a>\n\t\t\t\t<!-- <div></div> -->\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- nodejs logo -->\n\t\t<div id=\"right\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\">\n\t\t\t\t<img width=\"100\" src=\"https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg\"/>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div id=\"top\">\n\t\t\t<div class=\"bg\"></div>\n\t\t</div>\n\n\t\t<div id=\"bottom\">\n\t\t\t<div class=\"bg\"></div>\n\t\t</div>\n\n\t</div>\n\n</div>\n\n<section>\n\t<h2>Renovation Mode</h2>\n\t\n\t<p>Greetings, I am still in the process of updating my portfolio and upgrading to Angular 12. For now, the Gallery contains projects overviews and below is a summary of what I am currently doing.</p>\n</section>\n<br>\n\n<section>\n\t<h2>The Present</h2>\n\n\t<h3>Primary Role &amp; Responsibilities</h3>\n\t<ul>\n\t\t<li>Environment: <b>.Net</b></li>\n\t\t<li>Role: <b>UI Developer</b></li>\n\t\t<li>Library/framework: <b>AngularJS, Angular 5</b></li>\n\t\t<li>Responsibilities: Develop new UI features per the direction of the User Experience and Customer Experience decision makers </li>\n\t</ul>\n\n\t<h3>Secondary Role &amp; Responsibilities</h3>\n\t<ul>\n\t\t<li>Environment: <b>NodeJS</b></li>\n\t\t<li>Role: <b>UX Designer</b></li>\n\t\t<li>Library/framework: <b>Angular (latest)</b></li>\n\t\t<li>Wireframe/Mock-ups Programs: <b>Balsamiq, PhotoShop CC</b></li>\n\t\t<li>Responsibilities:  Create wireframes, low/high fidelity proof-of-concepts and update Sitecore CMS assets per request </li>\n\t</ul>\n\n\t<h3>Other Projects</h3>\n\t<ul>\n\t\t<li>A progressive web app that served short stories using <b>Vanilla Javascript, Workbox (PWA), ParcelJS, NodeJS, Firebase</b></li>\n\t</ul>\n\n\t<h3>Certificates</h3>\n\t<ul>\n\t\t<li>Angular Progressive Web Apps (2019)</li>\n\t\t<li>Javascript Debugging Crash Course (2019)</li>\n\t\t<li>Javascript: Understanding the Weird Parts (2019)</li>\n\t</ul>\n\n\t<h3>Interested In</h3>\n\t<ul>\n\t\t<li>Angular projects (primarily) and exploring <u>simple</u> React/Vue/Svelte projects</li>\n\t\t<li>Working remotely</li>\n\t\t<li>Machine Learning</li>\n\t</ul>\n</section>\n<br>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- icon  -->\n<h1 class=\"backshadow\"><i class=\"fa fa-home secondary-text-color\" aria-hidden=\"true\"></i>\n\t<!-- <br>My Portfolio -->\n</h1>\n\n<!-- cube -->\n<app-cube></app-cube>\n\n<!-- renovation msg -->\n<section>\n\t<h2>Renovation Mode</h2>\n\t\n\t<p>Greetings, I am still in the process of updating my portfolio and upgrading to Angular 12. For now, the Gallery contains projects overviews and below is a summary of what I am currently doing.</p>\n</section>\n<br>\n\n<!-- present work -->\n<section>\n\t<h2>The Present</h2>\n\n\t<h3>Primary Role &amp; Responsibilities</h3>\n\t<ul>\n\t\t<li>Environment: <b>.Net</b></li>\n\t\t<li>Role: <b>UI Developer</b></li>\n\t\t<li>Library/framework: <b>AngularJS, Angular 5, BootStrap 4, JQuery, SASS</b></li>\n\t\t<li>Programs: <b>Microsoft Visual Studio</b></li>\n\t\t<li>Responsibilities: Develop new UI features per the direction of the User Experience and Customer Experience members</li>\n\t</ul>\n\n\t<h3>Secondary Role &amp; Responsibilities</h3>\n\t<ul>\n\t\t<li>Environment: <b>NodeJS</b></li>\n\t\t<li>Role: <b>UX Designer</b></li>\n\t\t<li>Library/framework: <b>Angular (latest)</b></li>\n\t\t<li>Programs: <b>Visual Studio Code, LESS</b></li>\n\t\t<li>Wireframe/Mock-ups Programs: <b>Balsamiq, PhotoShop CC</b></li>\n\t\t<li>Responsibilities:  Create wireframes, low/high fidelity proof-of-concepts and update Sitecore CMS assets per request </li>\n\t</ul>\n\n\t<h3>Other Projects</h3>\n\t<ul>\n\t\t<li>A progressive web app that served short stories using <b>Vanilla JavaScript, Workbox, ParcelJS, NodeJS, Firebase</b></li>\n\t</ul>\n\n\t<h3>Certificates</h3>\n\t<ul>\n\t\t<li>Angular Progressive Web Apps (2019)</li>\n\t\t<li>JavaScript Debugging Crash Course (2019)</li>\n\t\t<li>JavaScript: Understanding the Weird Parts (2019)</li>\n\t</ul>\n\n\t<h3>Interested In</h3>\n\t<ul>\n\t\t<li>Angular projects (primarily) and exploring <u>simple</u> React/Vue/Svelte projects</li>\n\t\t<li>Working remotely</li>\n\t</ul>\n</section>\n<br>\n");
 
 /***/ }),
 
@@ -432,19 +429,6 @@ SamplesService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /***/ }),
 
-/***/ "RV7M":
-/*!*****************************************!*\
-  !*** ./src/app/home/home.component.css ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("#cube_container {\r\n   width: 160px;\r\n   height:160px;\r\n   margin:50px auto;\r\n   perspective:800px;\r\n   position:relative;\r\n   z-index: 1;\r\n}\r\n\r\n#box {\r\n   width:160px;\r\n   height: 160px;\r\n   transform-style: preserve-3d;\r\n   animation: rotate 30s linear infinite;\r\n}\r\n\r\n#box * div {\r\n   position:absolute;\r\n   width:160px;\r\n   height:160px;\r\n   box-sizing: border-box;\r\n   flex-direction: column;\r\n   border-radius: 30px;\r\n}\r\n\r\n.bg {\r\n   opacity: 0.9;\r\n   background:#fffcfc;\r\n}\r\n\r\n.fg {\r\n   display: flex;\r\n   flex-wrap:wrap;\r\n   justify-content: center;\r\n   align-items: center;\r\n   /* color:#e86a99; */\r\n   color:#fff;\r\n}\r\n\r\n.fg h1, .fg h2, .fg h3 {\r\n   font-weight: lighter;\r\n   text-align: center;\r\n   font-size:26px;\r\n}\r\n\r\n/* .fg:hover {\r\n   cursor:pointer;\r\n   background:#006f89;\r\n} */\r\n\r\n.fg > div {\r\n   display: flex; \r\n   justify-content: center;\r\n   align-items: center;\r\n}\r\n\r\n#front  {\r\n   transform: translateZ(80px);\r\n}\r\n\r\n#back {\r\n   transform: rotateY(180deg) translateZ(80px);\r\n}\r\n\r\n#left {\r\n   transform: rotateY(-90deg) translateZ(80px);\r\n}\r\n\r\n#right {\r\n   transform: rotateY(90deg) translateZ(80px);\r\n}\r\n\r\n#top {\r\n   transform: rotateX(90deg) translateZ(0px) translateY(-80px);\r\n}\r\n\r\n#bottom {\r\n   transform: rotateX(90deg) translateZ(-160px) translateY(-80px);\r\n}\r\n\r\n@keyframes rotate {\r\n   0% {\r\n       transform:roateY(0);\r\n   }\r\n   100% {\r\n       transform:rotateY(360deg);\r\n   }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtHQUNHLFlBQVk7R0FDWixZQUFZO0dBQ1osZ0JBQWdCO0dBQ2hCLGlCQUFpQjtHQUNqQixpQkFBaUI7R0FDakIsVUFBVTtBQUNiOztBQUVBO0dBQ0csV0FBVztHQUNYLGFBQWE7R0FDYiw0QkFBNEI7R0FDNUIscUNBQXFDO0FBQ3hDOztBQUVBO0dBQ0csaUJBQWlCO0dBQ2pCLFdBQVc7R0FDWCxZQUFZO0dBQ1osc0JBQXNCO0dBQ3RCLHNCQUFzQjtHQUN0QixtQkFBbUI7QUFDdEI7O0FBRUE7R0FDRyxZQUFZO0dBQ1osa0JBQWtCO0FBQ3JCOztBQUNBO0dBQ0csYUFBYTtHQUNiLGNBQWM7R0FDZCx1QkFBdUI7R0FDdkIsbUJBQW1CO0dBQ25CLG1CQUFtQjtHQUNuQixVQUFVO0FBQ2I7O0FBQ0E7R0FDRyxvQkFBb0I7R0FDcEIsa0JBQWtCO0dBQ2xCLGNBQWM7QUFDakI7O0FBQ0E7OztHQUdHOztBQUNIO0dBQ0csYUFBYTtHQUNiLHVCQUF1QjtHQUN2QixtQkFBbUI7QUFDdEI7O0FBRUE7R0FDRywyQkFBMkI7QUFDOUI7O0FBQ0E7R0FDRywyQ0FBMkM7QUFDOUM7O0FBQ0E7R0FDRywyQ0FBMkM7QUFDOUM7O0FBQ0E7R0FDRywwQ0FBMEM7QUFDN0M7O0FBQ0E7R0FDRywyREFBMkQ7QUFDOUQ7O0FBQ0E7R0FDRyw4REFBOEQ7QUFDakU7O0FBRUE7R0FDRztPQUNJLG1CQUFtQjtHQUN2QjtHQUNBO09BQ0kseUJBQXlCO0dBQzdCO0FBQ0giLCJmaWxlIjoiaG9tZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI2N1YmVfY29udGFpbmVyIHtcclxuICAgd2lkdGg6IDE2MHB4O1xyXG4gICBoZWlnaHQ6MTYwcHg7XHJcbiAgIG1hcmdpbjo1MHB4IGF1dG87XHJcbiAgIHBlcnNwZWN0aXZlOjgwMHB4O1xyXG4gICBwb3NpdGlvbjpyZWxhdGl2ZTtcclxuICAgei1pbmRleDogMTtcclxufVxyXG5cclxuI2JveCB7XHJcbiAgIHdpZHRoOjE2MHB4O1xyXG4gICBoZWlnaHQ6IDE2MHB4O1xyXG4gICB0cmFuc2Zvcm0tc3R5bGU6IHByZXNlcnZlLTNkO1xyXG4gICBhbmltYXRpb246IHJvdGF0ZSAzMHMgbGluZWFyIGluZmluaXRlO1xyXG59XHJcblxyXG4jYm94ICogZGl2IHtcclxuICAgcG9zaXRpb246YWJzb2x1dGU7XHJcbiAgIHdpZHRoOjE2MHB4O1xyXG4gICBoZWlnaHQ6MTYwcHg7XHJcbiAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgIGJvcmRlci1yYWRpdXM6IDMwcHg7XHJcbn1cclxuXHJcbi5iZyB7XHJcbiAgIG9wYWNpdHk6IDAuOTtcclxuICAgYmFja2dyb3VuZDojZmZmY2ZjO1xyXG59XHJcbi5mZyB7XHJcbiAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgIGZsZXgtd3JhcDp3cmFwO1xyXG4gICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgLyogY29sb3I6I2U4NmE5OTsgKi9cclxuICAgY29sb3I6I2ZmZjtcclxufVxyXG4uZmcgaDEsIC5mZyBoMiwgLmZnIGgzIHtcclxuICAgZm9udC13ZWlnaHQ6IGxpZ2h0ZXI7XHJcbiAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgZm9udC1zaXplOjI2cHg7XHJcbn1cclxuLyogLmZnOmhvdmVyIHtcclxuICAgY3Vyc29yOnBvaW50ZXI7XHJcbiAgIGJhY2tncm91bmQ6IzAwNmY4OTtcclxufSAqL1xyXG4uZmcgPiBkaXYge1xyXG4gICBkaXNwbGF5OiBmbGV4OyBcclxuICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbn1cclxuXHJcbiNmcm9udCAge1xyXG4gICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVooODBweCk7XHJcbn1cclxuI2JhY2sge1xyXG4gICB0cmFuc2Zvcm06IHJvdGF0ZVkoMTgwZGVnKSB0cmFuc2xhdGVaKDgwcHgpO1xyXG59XHJcbiNsZWZ0IHtcclxuICAgdHJhbnNmb3JtOiByb3RhdGVZKC05MGRlZykgdHJhbnNsYXRlWig4MHB4KTtcclxufVxyXG4jcmlnaHQge1xyXG4gICB0cmFuc2Zvcm06IHJvdGF0ZVkoOTBkZWcpIHRyYW5zbGF0ZVooODBweCk7XHJcbn1cclxuI3RvcCB7XHJcbiAgIHRyYW5zZm9ybTogcm90YXRlWCg5MGRlZykgdHJhbnNsYXRlWigwcHgpIHRyYW5zbGF0ZVkoLTgwcHgpO1xyXG59XHJcbiNib3R0b20ge1xyXG4gICB0cmFuc2Zvcm06IHJvdGF0ZVgoOTBkZWcpIHRyYW5zbGF0ZVooLTE2MHB4KSB0cmFuc2xhdGVZKC04MHB4KTtcclxufVxyXG5cclxuQGtleWZyYW1lcyByb3RhdGUge1xyXG4gICAwJSB7XHJcbiAgICAgICB0cmFuc2Zvcm06cm9hdGVZKDApO1xyXG4gICB9XHJcbiAgIDEwMCUge1xyXG4gICAgICAgdHJhbnNmb3JtOnJvdGF0ZVkoMzYwZGVnKTtcclxuICAgfVxyXG59Il19 */");
-
-/***/ }),
-
 /***/ "Sy1n":
 /*!**********************************!*\
   !*** ./src/app/app.component.ts ***!
@@ -482,6 +466,19 @@ AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 ], AppComponent);
 
 
+
+/***/ }),
+
+/***/ "U0P5":
+/*!********************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/cube/cube.component.html ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"cube_container\">\n\n\t<div id=\"box\">\n\n\t\t<!-- angular -->\n\t\t<div id=\"front\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\">\n\t\t\t\t<div style=\"position: relative;\">\n\t\t\t\t\t<a href=\"https://angular.io\" target=\"_blank\" style=\"position:absolute; top:20px;left:20px;\"><img src=\"https://angular.io/assets/images/logos/angular/angular.svg\" width=\"70\"\talt=\"angular logo\" title=\"www.angular.io\"></a>\n\t\t\t\t\t<a href=\"https://angular.io\" target=\"_blank\" style=\"position:absolute; bottom:20px; right:20px;\"><img src=\"https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg\" width=\"60\" alt=\"angularjs logo\" title=\"angularjs logo\"></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- html5/css/js logos -->\n\t\t<div id=\"back\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\" >\n\t\t\t\t<div style=\"position:relative;\">\n\t\t\t\t\t<a href=\"https://commons.wikimedia.org/wiki/File:HTML5_Badge.svg\" style=\"position:absolute; top:20px;left:20px;\"><img width=\"40\" alt=\"HTML5 icon\" title=\"HTML5 icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/64px-HTML5_Badge.svg.png\"></a>\n\t\t\t\t\t<a href=\"https://commons.wikimedia.org/wiki/File:Javascript-shield.svg\" ><img width=\"40\" alt=\"JavaScript icon\" title=\"JavaScript icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/64px-Javascript-shield.svg.png\"></a>\n\t\t\t\t\t<a href=\"https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg\" style=\"position:absolute; bottom:20px;right:20px;\"><img width=\"40\"  title=\"CSS3 icon\" alt=\"CSS3 icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/256px-CSS3_logo_and_wordmark.svg.png\"></a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t\n\t\t<!-- firebase logo -->\n\t\t<div id=\"left\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\">\n\t\t\t\t<a title=\"firebase logo\" href=\"https://commons.wikimedia.org/wiki/File:Javascript-shield.svg\"><img width=\"120\" alt=\"firebase logo\" src=\"https://firebase.google.com/downloads/brand-guidelines/SVG/logo-standard.svg\"></a>\n\t\t\t\t<!-- <div></div> -->\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- nodejs logo -->\n\t\t<div id=\"right\">\n\t\t\t<div class=\"bg\"></div>\n\t\t\t<div class=\"fg\">\n\t\t\t\t<img width=\"100\" src=\"https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg\"/>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div id=\"top\">\n\t\t\t<div class=\"bg\"></div>\n\t\t</div>\n\n\t\t<div id=\"bottom\">\n\t\t\t<div class=\"bg\"></div>\n\t\t</div>\n\n\t</div>\n\n</div>");
 
 /***/ }),
 
@@ -524,6 +521,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./home/home.component */ "9vUh");
 /* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "rQPh");
 /* harmony import */ var _gallery_details_details_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./gallery/details/details.component */ "Atf9");
+/* harmony import */ var _cube_cube_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./cube/cube.component */ "soPY");
 
 
 
@@ -533,6 +531,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // import { BackgroundFxService } from './background-fx.service';
+
 
 
 
@@ -553,7 +552,8 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             _home_home_component__WEBPACK_IMPORTED_MODULE_13__["HomeComponent"],
             _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_14__["PageNotFoundComponent"],
             _gallery_details_details_component__WEBPACK_IMPORTED_MODULE_15__["DetailsComponent"],
-            _filter_pipe__WEBPACK_IMPORTED_MODULE_8__["FilterPipe"]
+            _filter_pipe__WEBPACK_IMPORTED_MODULE_8__["FilterPipe"],
+            _cube_cube_component__WEBPACK_IMPORTED_MODULE_16__["CubeComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -569,6 +569,19 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 ], AppModule);
 
 
+
+/***/ }),
+
+/***/ "b9X2":
+/*!*****************************************!*\
+  !*** ./src/app/cube/cube.component.css ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("#cube_container {\r\n   width: 160px;\r\n   height:160px;\r\n   margin:50px auto;\r\n   perspective:800px;\r\n   position:relative;\r\n   z-index: 1;\r\n}\r\n\r\n#box {\r\n   width:160px;\r\n   height: 160px;\r\n   transform-style: preserve-3d;\r\n   animation: rotate 30s linear infinite;\r\n}\r\n\r\n#box * div {\r\n   position:absolute;\r\n   width:160px;\r\n   height:160px;\r\n   box-sizing: border-box;\r\n   flex-direction: column;\r\n   border-radius: 30px;\r\n}\r\n\r\n.bg {\r\n   opacity: 0.9;\r\n   background:#fffcfc;\r\n}\r\n\r\n.fg {\r\n   display: flex;\r\n   flex-wrap:wrap;\r\n   justify-content: center;\r\n   align-items: center;\r\n   /* color:#e86a99; */\r\n   color:#fff;\r\n}\r\n\r\n.fg h1, .fg h2, .fg h3 {\r\n   font-weight: lighter;\r\n   text-align: center;\r\n   font-size:26px;\r\n}\r\n\r\n/* .fg:hover {\r\n   cursor:pointer;\r\n   background:#006f89;\r\n} */\r\n\r\n.fg > div {\r\n   display: flex; \r\n   justify-content: center;\r\n   align-items: center;\r\n}\r\n\r\n#front  {\r\n   transform: translateZ(80px);\r\n}\r\n\r\n#back {\r\n   transform: rotateY(180deg) translateZ(80px);\r\n}\r\n\r\n#left {\r\n   transform: rotateY(-90deg) translateZ(80px);\r\n}\r\n\r\n#right {\r\n   transform: rotateY(90deg) translateZ(80px);\r\n}\r\n\r\n#top {\r\n   transform: rotateX(90deg) translateZ(0px) translateY(-80px);\r\n}\r\n\r\n#bottom {\r\n   transform: rotateX(90deg) translateZ(-160px) translateY(-80px);\r\n}\r\n\r\n@keyframes rotate {\r\n   0% {\r\n       transform:roateY(0);\r\n   }\r\n   100% {\r\n       transform:rotateY(360deg);\r\n   }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImN1YmUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtHQUNHLFlBQVk7R0FDWixZQUFZO0dBQ1osZ0JBQWdCO0dBQ2hCLGlCQUFpQjtHQUNqQixpQkFBaUI7R0FDakIsVUFBVTtBQUNiOztBQUVBO0dBQ0csV0FBVztHQUNYLGFBQWE7R0FDYiw0QkFBNEI7R0FDNUIscUNBQXFDO0FBQ3hDOztBQUVBO0dBQ0csaUJBQWlCO0dBQ2pCLFdBQVc7R0FDWCxZQUFZO0dBQ1osc0JBQXNCO0dBQ3RCLHNCQUFzQjtHQUN0QixtQkFBbUI7QUFDdEI7O0FBRUE7R0FDRyxZQUFZO0dBQ1osa0JBQWtCO0FBQ3JCOztBQUNBO0dBQ0csYUFBYTtHQUNiLGNBQWM7R0FDZCx1QkFBdUI7R0FDdkIsbUJBQW1CO0dBQ25CLG1CQUFtQjtHQUNuQixVQUFVO0FBQ2I7O0FBQ0E7R0FDRyxvQkFBb0I7R0FDcEIsa0JBQWtCO0dBQ2xCLGNBQWM7QUFDakI7O0FBQ0E7OztHQUdHOztBQUNIO0dBQ0csYUFBYTtHQUNiLHVCQUF1QjtHQUN2QixtQkFBbUI7QUFDdEI7O0FBRUE7R0FDRywyQkFBMkI7QUFDOUI7O0FBQ0E7R0FDRywyQ0FBMkM7QUFDOUM7O0FBQ0E7R0FDRywyQ0FBMkM7QUFDOUM7O0FBQ0E7R0FDRywwQ0FBMEM7QUFDN0M7O0FBQ0E7R0FDRywyREFBMkQ7QUFDOUQ7O0FBQ0E7R0FDRyw4REFBOEQ7QUFDakU7O0FBRUE7R0FDRztPQUNJLG1CQUFtQjtHQUN2QjtHQUNBO09BQ0kseUJBQXlCO0dBQzdCO0FBQ0giLCJmaWxlIjoiY3ViZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI2N1YmVfY29udGFpbmVyIHtcclxuICAgd2lkdGg6IDE2MHB4O1xyXG4gICBoZWlnaHQ6MTYwcHg7XHJcbiAgIG1hcmdpbjo1MHB4IGF1dG87XHJcbiAgIHBlcnNwZWN0aXZlOjgwMHB4O1xyXG4gICBwb3NpdGlvbjpyZWxhdGl2ZTtcclxuICAgei1pbmRleDogMTtcclxufVxyXG5cclxuI2JveCB7XHJcbiAgIHdpZHRoOjE2MHB4O1xyXG4gICBoZWlnaHQ6IDE2MHB4O1xyXG4gICB0cmFuc2Zvcm0tc3R5bGU6IHByZXNlcnZlLTNkO1xyXG4gICBhbmltYXRpb246IHJvdGF0ZSAzMHMgbGluZWFyIGluZmluaXRlO1xyXG59XHJcblxyXG4jYm94ICogZGl2IHtcclxuICAgcG9zaXRpb246YWJzb2x1dGU7XHJcbiAgIHdpZHRoOjE2MHB4O1xyXG4gICBoZWlnaHQ6MTYwcHg7XHJcbiAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgIGJvcmRlci1yYWRpdXM6IDMwcHg7XHJcbn1cclxuXHJcbi5iZyB7XHJcbiAgIG9wYWNpdHk6IDAuOTtcclxuICAgYmFja2dyb3VuZDojZmZmY2ZjO1xyXG59XHJcbi5mZyB7XHJcbiAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgIGZsZXgtd3JhcDp3cmFwO1xyXG4gICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgLyogY29sb3I6I2U4NmE5OTsgKi9cclxuICAgY29sb3I6I2ZmZjtcclxufVxyXG4uZmcgaDEsIC5mZyBoMiwgLmZnIGgzIHtcclxuICAgZm9udC13ZWlnaHQ6IGxpZ2h0ZXI7XHJcbiAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgZm9udC1zaXplOjI2cHg7XHJcbn1cclxuLyogLmZnOmhvdmVyIHtcclxuICAgY3Vyc29yOnBvaW50ZXI7XHJcbiAgIGJhY2tncm91bmQ6IzAwNmY4OTtcclxufSAqL1xyXG4uZmcgPiBkaXYge1xyXG4gICBkaXNwbGF5OiBmbGV4OyBcclxuICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbn1cclxuXHJcbiNmcm9udCAge1xyXG4gICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVooODBweCk7XHJcbn1cclxuI2JhY2sge1xyXG4gICB0cmFuc2Zvcm06IHJvdGF0ZVkoMTgwZGVnKSB0cmFuc2xhdGVaKDgwcHgpO1xyXG59XHJcbiNsZWZ0IHtcclxuICAgdHJhbnNmb3JtOiByb3RhdGVZKC05MGRlZykgdHJhbnNsYXRlWig4MHB4KTtcclxufVxyXG4jcmlnaHQge1xyXG4gICB0cmFuc2Zvcm06IHJvdGF0ZVkoOTBkZWcpIHRyYW5zbGF0ZVooODBweCk7XHJcbn1cclxuI3RvcCB7XHJcbiAgIHRyYW5zZm9ybTogcm90YXRlWCg5MGRlZykgdHJhbnNsYXRlWigwcHgpIHRyYW5zbGF0ZVkoLTgwcHgpO1xyXG59XHJcbiNib3R0b20ge1xyXG4gICB0cmFuc2Zvcm06IHJvdGF0ZVgoOTBkZWcpIHRyYW5zbGF0ZVooLTE2MHB4KSB0cmFuc2xhdGVZKC04MHB4KTtcclxufVxyXG5cclxuQGtleWZyYW1lcyByb3RhdGUge1xyXG4gICAwJSB7XHJcbiAgICAgICB0cmFuc2Zvcm06cm9hdGVZKDApO1xyXG4gICB9XHJcbiAgIDEwMCUge1xyXG4gICAgICAgdHJhbnNmb3JtOnJvdGF0ZVkoMzYwZGVnKTtcclxuICAgfVxyXG59Il19 */");
 
 /***/ }),
 
@@ -700,6 +713,42 @@ PageNotFoundComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])
         styles: [_page_not_found_component_css__WEBPACK_IMPORTED_MODULE_2__["default"]]
     })
 ], PageNotFoundComponent);
+
+
+
+/***/ }),
+
+/***/ "soPY":
+/*!****************************************!*\
+  !*** ./src/app/cube/cube.component.ts ***!
+  \****************************************/
+/*! exports provided: CubeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubeComponent", function() { return CubeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _raw_loader_cube_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./cube.component.html */ "U0P5");
+/* harmony import */ var _cube_component_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cube.component.css */ "b9X2");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+
+
+
+let CubeComponent = class CubeComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+CubeComponent.ctorParameters = () => [];
+CubeComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+        selector: 'app-cube',
+        template: _raw_loader_cube_component_html__WEBPACK_IMPORTED_MODULE_1__["default"],
+        styles: [_cube_component_css__WEBPACK_IMPORTED_MODULE_2__["default"]]
+    })
+], CubeComponent);
 
 
 
@@ -848,4 +897,4 @@ webpackEmptyAsyncContext.id = "zn8P";
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.e404cc51406710af8436.js.map
+//# sourceMappingURL=main.27c41b487c4648d36b5f.js.map
