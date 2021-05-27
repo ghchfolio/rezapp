@@ -73,7 +73,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h1 class=\"backshadow\">\n   <i class=\"fa fa-user-circle-o\" aria-hidden=\"true\"></i>\n</h1>\n\n<section>\n\n   <p>Primarily I am a <b>JavaScript</b> Front End Web/UI developer, with some experience in NodeJS (creating APIs or a small Express app, for proof-of-concept, interactive-mocks etc.).</p>\n   \n   <p>I currently maintain the UI for projects developed in Angular <i>and</i> AngularJS but for continuity (and less <b>TypeScript</b> muscle memory loss), prefer Angular. I am also familiar with the basics of the ReactJS, VueJS and Svelte libriaries.</p>\n   \n   <p>I try to stay current with best-practices and regularly attend live YouTube discussions or Meetups.</p>\n\n   <ul>\n      <li>App Version: 2.1</li>\n      <li>Framework: Angular 12</li>\n      <li>Features: Router, Deep-linking, Pipe, Service, HTTP Client</li>\n   </ul>\n\n</section>\n\n<br>\n\n<div id=\"nglogo\">\n   <a href=\"https://angular.io\" target=\"_blank\"><img src=\"https://angular.io/assets/images/logos/angular/angular.svg\"\n         alt=\"www.angular.io\" title=\"www.angular.io\"></a>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<h1 class=\"backshadow\">\n   <i class=\"fa fa-user-circle-o\" aria-hidden=\"true\"></i>\n</h1>\n\n<section>\n\n   <p>Primarily I am a <b>JavaScript</b> Front End Web/UI developer, with some experience in NodeJS (creating APIs or a small Express app, for proof-of-concept, interactive-mocks etc.).</p>\n   \n   <p>I currently maintain the UI for projects developed in Angular <i>and</i> AngularJS but for continuity (and less <b>TypeScript</b> muscle memory loss), prefer Angular. I am also familiar with the basics of the ReactJS, VueJS and Svelte libriaries.</p>\n   \n   <p>I try to stay current with best-practices and regularly attend live YouTube discussions or Meetups.</p>\n\n   <ul>\n      <!-- <li>App Version: 2.1</li> -->\n      <li>Framework: Angular 12</li>\n      <!-- <li>Features: Router, Deep-linking, Pipe, Service, HTTP Client</li> -->\n   </ul>\n\n</section>\n\n<br>\n\n<div id=\"nglogo\">\n   <a href=\"https://angular.io\" target=\"_blank\"><img src=\"https://angular.io/assets/images/logos/angular/angular.svg\"\n         alt=\"www.angular.io\" title=\"www.angular.io\"></a>\n</div>");
 
 /***/ }),
 
@@ -897,4 +897,4 @@ webpackEmptyAsyncContext.id = "zn8P";
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.27c41b487c4648d36b5f.js.map
+//# sourceMappingURL=main.5e9dbe8ada1e8d9d4d62.js.map
