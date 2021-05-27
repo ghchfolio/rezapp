@@ -73,7 +73,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h1 class=\"backshadow\">\n   <i class=\"fa fa-user-circle-o\" aria-hidden=\"true\"></i>\n</h1>\n\n<section>\n\n   <p>I am a Front End Web/UI developer with experience in PHP/NodeJS, JavaScript and frameworks\n      such as Angular, Ionic Framework, and Apache Cordova. Over time my interests have settled on serverless UI development with some of the popular UI libraries available today. I am a developer with equal interests in  development as well as presentation (visual/media).</p>\n\n   <p>I try to stay up to date with best-practices and regularly attend live YouTube discussions or\n      Meetups.</p>\n\n   <ul>\n      <li>App Version: 2.0</li>\n      <li>Framework: Angular 12</li>\n      <li>Features: Router, Deep-linking, Pipe, Service, HTTP Client Module</li>\n   </ul>\n\n</section>\n\n<br>\n\n<div id=\"nglogo\">\n   <a href=\"https://angular.io\" target=\"_blank\"><img src=\"https://angular.io/assets/images/logos/angular/angular.svg\"\n         alt=\"www.angular.io\" title=\"www.angular.io\"></a>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<h1 class=\"backshadow\">\n   <i class=\"fa fa-user-circle-o\" aria-hidden=\"true\"></i>\n</h1>\n\n<section>\n\n   <p>Primarily I am a <b>JavaScript</b> Front End Web/UI developer, with some experience in NodeJS (creating APIs or a small Express app, for proof-of-concept, interactive-mocks etc.).</p>\n   \n   <p>I currently maintain the UI for projects developed in Angular <i>and</i> AngularJS but for continuity (and less <b>TypeScript</b> muscle memory loss), prefer Angular. I am also familiar with the basics of the ReactJS, VueJS and Svelte libriaries.</p>\n   \n   <p>I try to stay current with best-practices and regularly attend live YouTube discussions or Meetups.</p>\n\n   <ul>\n      <li>App Version: 2.1</li>\n      <li>Framework: Angular 12</li>\n      <li>Features: Router, Deep-linking, Pipe, Service, HTTP Client</li>\n   </ul>\n\n</section>\n\n<br>\n\n<div id=\"nglogo\">\n   <a href=\"https://angular.io\" target=\"_blank\"><img src=\"https://angular.io/assets/images/logos/angular/angular.svg\"\n         alt=\"www.angular.io\" title=\"www.angular.io\"></a>\n</div>");
 
 /***/ }),
 
@@ -275,7 +275,7 @@ const environment = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"search\" class=\"shadow\">\n   <form>\n       <input type=\"text\" [(ngModel)]=\"term\" name=\"term\" placeholder=\"caption, company, year, project type or arsenal\" class=\"rounded\">\n   </form>\n</div>\n\n<h1 class=\"backshadow\"><i class=\"fa fa-picture-o\" aria-hidden=\"true\"></i>\n    <!-- <br>Gallery -->\n</h1>\n\n<div id=\"gallery\"> \n    <figure *ngFor=\"let sample of samples | searchFilter:term\">\n       <a class=\"backshadow\" (click)=\"navigateTo( sample.id )\"><img src=\"{{sample.src}}\" alt=\"{{sample.caption}}\" title=\"{{sample.caption}}\" class=\"thumbs shadow\">\n       <figcaption>{{sample.caption}}</figcaption></a>\n   </figure>   \n</div> ");
+/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"search\" class=\"shadow\">\r\n   <form>\r\n       <input type=\"text\" [(ngModel)]=\"term\" name=\"term\" placeholder=\"caption, company, year, project type or arsenal\" class=\"rounded\">\r\n   </form>\r\n</div>\r\n\r\n<h1 class=\"backshadow\"><i class=\"fa fa-picture-o\" aria-hidden=\"true\"></i>\r\n    <!-- <br>Gallery -->\r\n</h1>\r\n\r\n<div id=\"gallery\"> \r\n    <figure *ngFor=\"let sample of samples | searchFilter:term\">\r\n       <a class=\"backshadow\" (click)=\"navigateTo( sample.id )\"><img src=\"{{sample.src}}\" alt=\"{{sample.caption}}\" title=\"{{sample.caption}}\" class=\"thumbs shadow\">\r\n       <figcaption>{{sample.caption}}</figcaption></a>\r\n   </figure>   \r\n</div> ");
 
 /***/ }),
 
@@ -414,9 +414,8 @@ let SamplesService = class SamplesService {
         this._http = _http;
     }
     getSamples() {
-        if (this.samples == null) {
+        if (this.samples === null || this.samples === undefined)
             this.samples = this._http.get('assets/samples.json');
-        }
         return this.samples;
     }
 };
@@ -849,4 +848,4 @@ webpackEmptyAsyncContext.id = "zn8P";
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.006116b5dfa1b73e61b8.js.map
+//# sourceMappingURL=main.e404cc51406710af8436.js.map
