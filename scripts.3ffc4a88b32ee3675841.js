@@ -146,5 +146,13 @@ function BackgroundFx() {
    var el = document.getElementById('appTitle');
    el.textContent = str || 'Resume'
 }
+
+function ScrollToTop() {
+   window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+}
 ;
-//# sourceMappingURL=scripts.72732d5642985f8cb663.js.map
+//# sourceMappingURL=scripts.3ffc4a88b32ee3675841.js.map
