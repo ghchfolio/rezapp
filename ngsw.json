@@ -1,0 +1,145 @@
+{
+  "configVersion": 1,
+  "timestamp": 1622327089339,
+  "index": "/rezapp/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/rezapp/favicon.ico",
+        "/rezapp/index.html",
+        "/rezapp/main.bff3a959880912af65f8.js",
+        "/rezapp/manifest.webmanifest",
+        "/rezapp/polyfills.0293f561b9f356e39d6b.js",
+        "/rezapp/runtime.d0516acdca23c8f16ace.js",
+        "/rezapp/scripts.3ffc4a88b32ee3675841.js",
+        "/rezapp/styles.9c640b0c09a052200ce8.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/rezapp/assets/BackgroundFx.js",
+        "/rezapp/assets/icons/icon-128x128.png",
+        "/rezapp/assets/icons/icon-144x144.png",
+        "/rezapp/assets/icons/icon-152x152.png",
+        "/rezapp/assets/icons/icon-192x192.png",
+        "/rezapp/assets/icons/icon-384x384.png",
+        "/rezapp/assets/icons/icon-512x512.png",
+        "/rezapp/assets/icons/icon-72x72.png",
+        "/rezapp/assets/icons/icon-96x96.png",
+        "/rezapp/assets/misc.js",
+        "/rezapp/assets/samples.json",
+        "/rezapp/assets/th-adelli.PNG",
+        "/rezapp/assets/th-ba.PNG",
+        "/rezapp/assets/th-bganim.PNG",
+        "/rezapp/assets/th-blog.PNG",
+        "/rezapp/assets/th-bsmd.PNG",
+        "/rezapp/assets/th-calendar.PNG",
+        "/rezapp/assets/th-d2x.PNG",
+        "/rezapp/assets/th-dsk.PNG",
+        "/rezapp/assets/th-dtb.PNG",
+        "/rezapp/assets/th-dwl.PNG",
+        "/rezapp/assets/th-eml.PNG",
+        "/rezapp/assets/th-filt.PNG",
+        "/rezapp/assets/th-gam.PNG",
+        "/rezapp/assets/th-graph.PNG",
+        "/rezapp/assets/th-ktgem1.PNG",
+        "/rezapp/assets/th-ktgem2.PNG",
+        "/rezapp/assets/th-ktpem1.PNG",
+        "/rezapp/assets/th-mdb.PNG",
+        "/rezapp/assets/th-mk1.PNG",
+        "/rezapp/assets/th-mk2.PNG",
+        "/rezapp/assets/th-oat.PNG",
+        "/rezapp/assets/th-portal.PNG",
+        "/rezapp/assets/th-pp.PNG",
+        "/rezapp/assets/th-scl.PNG",
+        "/rezapp/assets/th-shopsi.PNG",
+        "/rezapp/assets/th-tileanim.PNG",
+        "/rezapp/assets/th-wiref.PNG",
+        "/rezapp/assets/th-wordoot.PNG"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/rezapp/assets/BackgroundFx.js": "9dac94f3654829c814bf09ff46c154a9e1aa117a",
+    "/rezapp/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/rezapp/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/rezapp/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/rezapp/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/rezapp/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/rezapp/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/rezapp/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/rezapp/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/rezapp/assets/misc.js": "a4b04394c168bc3cfa23abb646193ef4213bac2b",
+    "/rezapp/assets/samples.json": "7f15199f22209e0a033738aa98cc093944dbd564",
+    "/rezapp/assets/th-adelli.PNG": "79d44402d11ef8709d4d1961f29cfdf10f7d26ee",
+    "/rezapp/assets/th-ba.PNG": "a40c0650c82105fd019a888d8128786e6bff85a3",
+    "/rezapp/assets/th-bganim.PNG": "c2143cacd4bff444c4f80fbc3759535de02c3ce9",
+    "/rezapp/assets/th-blog.PNG": "af825924b33bff8089734e8b18ef40210d4d071d",
+    "/rezapp/assets/th-bsmd.PNG": "b1898c42044e7d3603ffe54a7508ef41edef0c31",
+    "/rezapp/assets/th-calendar.PNG": "cbee279b6262b69459265bc72df2322468b55905",
+    "/rezapp/assets/th-d2x.PNG": "f6924a6d13014dc97242bd5071a5d841b973ab5c",
+    "/rezapp/assets/th-dsk.PNG": "ed582801f2fcbadad3bd4a30ba7e470a7d35591a",
+    "/rezapp/assets/th-dtb.PNG": "47c2f82bc295b275cbc4105889c2f82b52b0a65a",
+    "/rezapp/assets/th-dwl.PNG": "f6e4bd0b67f0d1395ab5da75430a8b109fa3e1d3",
+    "/rezapp/assets/th-eml.PNG": "26f2e8c466f29061c4a7a138c0cd3516a03aadc5",
+    "/rezapp/assets/th-filt.PNG": "2d6b53e143bc452d3376fd2b63735979349420a2",
+    "/rezapp/assets/th-gam.PNG": "9561f5fcc163ebdfcac51206abc237ff06b26692",
+    "/rezapp/assets/th-graph.PNG": "5c103207fd2c76ba4192a932b9fdcf8f7bec66b1",
+    "/rezapp/assets/th-ktgem1.PNG": "4b1306b93351cc447fff7b5c00d30a784b670846",
+    "/rezapp/assets/th-ktgem2.PNG": "eae9951b4cd3adc612124d5eb9907111b3e978d0",
+    "/rezapp/assets/th-ktpem1.PNG": "bd28e9cd3b87e1d8cb6ce4b21ac5f7c3f31224bf",
+    "/rezapp/assets/th-mdb.PNG": "ab01be008ef64ad5af90a80a1e1309239c60238a",
+    "/rezapp/assets/th-mk1.PNG": "f2501a2484910e5c3108e2d65e6f29e59c36df70",
+    "/rezapp/assets/th-mk2.PNG": "736a73d846e123ec3c70295f803dce02be86f225",
+    "/rezapp/assets/th-oat.PNG": "05a6e089cc35b9e7817823d990f10fb5f7f528c3",
+    "/rezapp/assets/th-portal.PNG": "76253cf7d1504b04f8e980ff4dfb2b5f20371c15",
+    "/rezapp/assets/th-pp.PNG": "16fc875b7afeaf07b3d001b362c19309cf8280df",
+    "/rezapp/assets/th-scl.PNG": "b77eb5be652ec464fb85a13dccf6a3435b4165c9",
+    "/rezapp/assets/th-shopsi.PNG": "1463d454202bf28be11c3e9f6b121e702747d2fd",
+    "/rezapp/assets/th-tileanim.PNG": "a7902c9acba5e152771e4365ec00bde54617df15",
+    "/rezapp/assets/th-wiref.PNG": "10a8c8429d5db4732b2adb6327b56e1c193b9ddf",
+    "/rezapp/assets/th-wordoot.PNG": "fac9632734bdd3260cf6cb1c30ebedb586c79f31",
+    "/rezapp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/rezapp/index.html": "e7aa9b1d20a58b0814726c2d9a9b1b69fce3a58a",
+    "/rezapp/main.bff3a959880912af65f8.js": "3db8c49d89ee101d49f5a64314121b348fb795ef",
+    "/rezapp/manifest.webmanifest": "f555835846f30b9b191dd87f81fbdbb9c1c092b0",
+    "/rezapp/polyfills.0293f561b9f356e39d6b.js": "dca23eb71da16457317ca75308ec9705c65a9104",
+    "/rezapp/runtime.d0516acdca23c8f16ace.js": "8bc8b14150290c9742cd0b0459c8d12256e143a1",
+    "/rezapp/scripts.3ffc4a88b32ee3675841.js": "83f612ddd0e9f5140e465a67a1aa30502ddf7853",
+    "/rezapp/styles.9c640b0c09a052200ce8.css": "cf95b9013a712cb297116bc1509092e1c2fd99ef"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
