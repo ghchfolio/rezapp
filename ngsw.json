@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1622327089339,
+  "timestamp": 1622331534443,
   "index": "/rezapp/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/rezapp/favicon.ico",
         "/rezapp/index.html",
-        "/rezapp/main.bff3a959880912af65f8.js",
+        "/rezapp/main.38e8c8d9dc39b2b445fd.js",
         "/rezapp/manifest.webmanifest",
         "/rezapp/polyfills.0293f561b9f356e39d6b.js",
         "/rezapp/runtime.d0516acdca23c8f16ace.js",
@@ -115,8 +115,8 @@
     "/rezapp/assets/th-wiref.PNG": "10a8c8429d5db4732b2adb6327b56e1c193b9ddf",
     "/rezapp/assets/th-wordoot.PNG": "fac9632734bdd3260cf6cb1c30ebedb586c79f31",
     "/rezapp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/rezapp/index.html": "e7aa9b1d20a58b0814726c2d9a9b1b69fce3a58a",
-    "/rezapp/main.bff3a959880912af65f8.js": "3db8c49d89ee101d49f5a64314121b348fb795ef",
+    "/rezapp/index.html": "a00df455978b87786ae59e0e3c477fba5e28de32",
+    "/rezapp/main.38e8c8d9dc39b2b445fd.js": "e257efd4f3b2894d9c7e77ee664176433daecf20",
     "/rezapp/manifest.webmanifest": "f555835846f30b9b191dd87f81fbdbb9c1c092b0",
     "/rezapp/polyfills.0293f561b9f356e39d6b.js": "dca23eb71da16457317ca75308ec9705c65a9104",
     "/rezapp/runtime.d0516acdca23c8f16ace.js": "8bc8b14150290c9742cd0b0459c8d12256e143a1",
