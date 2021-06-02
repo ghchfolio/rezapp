@@ -1,6 +1,6 @@
 function SetWindowTitle(str) {
    var el = document.getElementById('appTitle');
-   el.textContent = str || 'Resume'
+   el.textContent = str || 'Resume';
 }
 
 function ScrollToTop() {
@@ -9,4 +9,47 @@ function ScrollToTop() {
       left: 0,
       behavior: 'smooth'
     });
+}
+
+function TechLogosWidget() {
+
+   let boxes;
+
+   //when animation ends, delay for a randnom no. of sec
+   //then 'bounce' again
+   function delayThenBounce() {
+      const delay = (Math.floor(Math.random(10) * 10 + 1)) * 1000;
+      this.classList.remove('bounce-7');
+      setTimeout(() => {
+         this.classList.add('bounce-7');
+      }, delay);
+   }
+   
+   //add event listener only when element is present
+   function _init() {
+      if (document.getElementById('tech-logos-widget')) {
+         boxes = document.getElementsByClassName('box');
+         for (b of boxes) {
+            b.addEventListener('animationend', delayThenBounce);
+         }
+      }
+   }
+   
+   //remove event listners before component is destroyed
+   function _cleanUp() {
+      if (document.getElementById('tech-logos-widget')) {
+         for (b of boxes) {
+            b.removeEventListener('animationend');
+         }
+      }
+   }
+
+   return {
+      init: function () {
+         _init();
+      },
+      cleanUp: function () {
+         _cleanUp();
+      }
+   }
 }
