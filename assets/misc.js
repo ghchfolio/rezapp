@@ -18,7 +18,8 @@ function TechLogosWidget() {
    //when animation ends, delay for a randnom no. of sec
    //then 'bounce' again
    function delayThenBounce() {
-      const delay = (Math.floor(Math.random(10) * 10 + 1)) * 1000;
+      seconds = [0, 1, 3, 5];
+      const delay = (Math.floor(Math.random() * seconds.length)) * 1000;
       this.classList.remove('bounce-7');
       setTimeout(() => {
          this.classList.add('bounce-7');
