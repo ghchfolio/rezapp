@@ -1,4 +1,4 @@
-function BackgroundFx() {
+const BackgroundFx = (function () {
    let bg_color = '#f0f0f0',
       particle_colors = ['#dddddd'],
       max_particles = 50,
@@ -141,4 +141,4 @@ function BackgroundFx() {
       setParticleColors: SetParticleColors,
       setBackground: setBackgroundColor
    }
-}
+})();
