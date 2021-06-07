@@ -1,6 +1,7 @@
-function SetWindowTitle(str) {
+function SetWindowTitle(title) {
+   const defTitle = 'CHFolio';
    var el = document.getElementById('appTitle');
-   el.textContent = str || 'Resume';
+   el.textContent = defTitle + ' | ' + title || defTitle;
 }
 
 function ScrollToTop() {
