@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1625277568862,
+  "timestamp": 1625358356044,
   "index": "/rezapp/index.html",
   "assetGroups": [
     {
@@ -13,12 +13,12 @@
       "urls": [
         "/rezapp/favicon.ico",
         "/rezapp/index.html",
-        "/rezapp/main.4aa266a19603af6496a5.js",
+        "/rezapp/main.fdb8619058e904904f20.js",
         "/rezapp/manifest.webmanifest",
         "/rezapp/polyfills.0293f561b9f356e39d6b.js",
         "/rezapp/runtime.d0516acdca23c8f16ace.js",
         "/rezapp/scripts.1ea38bf599c1f0b70832.js",
-        "/rezapp/styles.deaf41606a6a945ae8db.css"
+        "/rezapp/styles.3455ba35efa14bf7cc13.css"
       ],
       "patterns": []
     },
@@ -72,6 +72,11 @@
         "/rezapp/assets/th-tileanim.PNG",
         "/rezapp/assets/th-wiref.PNG",
         "/rezapp/assets/th-wordoot.PNG",
+        "/rezapp/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+        "/rezapp/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+        "/rezapp/fontawesome-webfont.8b43027f47b20503057d.eot",
+        "/rezapp/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+        "/rezapp/fontawesome-webfont.f691f37e57f04c152e23.woff",
         "/rezapp/preloader-red-stripe.a103f51b3ac051ca7151.svg"
       ],
       "patterns": []
@@ -122,14 +127,19 @@
     "/rezapp/assets/th-wiref.PNG": "10a8c8429d5db4732b2adb6327b56e1c193b9ddf",
     "/rezapp/assets/th-wordoot.PNG": "fac9632734bdd3260cf6cb1c30ebedb586c79f31",
     "/rezapp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/rezapp/index.html": "479ebbfd63a73afc5425f09061baef3c5b208313",
-    "/rezapp/main.4aa266a19603af6496a5.js": "74552d6a1911a4dd5f27eb64e94e8845a7aa5514",
+    "/rezapp/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
+    "/rezapp/fontawesome-webfont.20fd1704ea223900efa9.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
+    "/rezapp/fontawesome-webfont.8b43027f47b20503057d.eot": "d980c2ce873dc43af460d4d572d441304499f400",
+    "/rezapp/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
+    "/rezapp/fontawesome-webfont.f691f37e57f04c152e23.woff": "28b782240b3e76db824e12c02754a9731a167527",
+    "/rezapp/index.html": "919865c3927a04e00279416a048616b879fab8cd",
+    "/rezapp/main.fdb8619058e904904f20.js": "ac75dff9d3a9aae88a49eab04313945445fd3f13",
     "/rezapp/manifest.webmanifest": "f555835846f30b9b191dd87f81fbdbb9c1c092b0",
     "/rezapp/polyfills.0293f561b9f356e39d6b.js": "dca23eb71da16457317ca75308ec9705c65a9104",
     "/rezapp/preloader-red-stripe.a103f51b3ac051ca7151.svg": "90cc14b6016eb6690b187943368a3b864f2f0d0d",
     "/rezapp/runtime.d0516acdca23c8f16ace.js": "8bc8b14150290c9742cd0b0459c8d12256e143a1",
     "/rezapp/scripts.1ea38bf599c1f0b70832.js": "9bc05a00f1d96cc82eceb79989d81c4a676cd877",
-    "/rezapp/styles.deaf41606a6a945ae8db.css": "4df61d6b0fcc5133831f1ac8fc05d855c0af6743"
+    "/rezapp/styles.3455ba35efa14bf7cc13.css": "a58c9f7a82196596b1c346f3df943dc1fc2453a5"
   },
   "navigationUrls": [
     {
