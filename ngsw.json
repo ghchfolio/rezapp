@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1625606966210,
+  "timestamp": 1625627067994,
   "index": "/rezapp/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/rezapp/favicon.ico",
         "/rezapp/index.html",
-        "/rezapp/main.fde219b00198d68dafe2.js",
+        "/rezapp/main.35ef63b1cc8bb985d8dd.js",
         "/rezapp/manifest.webmanifest",
         "/rezapp/polyfills.0293f561b9f356e39d6b.js",
         "/rezapp/runtime.d0516acdca23c8f16ace.js",
@@ -31,7 +31,7 @@
       },
       "urls": [
         "/rezapp/assets/BackgroundFx.js",
-        "/rezapp/assets/Built_with_Firebase_Logo_Light.svg",
+        "/rezapp/assets/firebase.svg",
         "/rezapp/assets/icons/icon-128x128.png",
         "/rezapp/assets/icons/icon-144x144.png",
         "/rezapp/assets/icons/icon-152x152.png",
@@ -85,7 +85,7 @@
   "dataGroups": [],
   "hashTable": {
     "/rezapp/assets/BackgroundFx.js": "2852384caa52f3c772534c643eba5992091876f1",
-    "/rezapp/assets/Built_with_Firebase_Logo_Light.svg": "d7c3f1b5a83685e8cf3d383f86d2c59fdba65954",
+    "/rezapp/assets/firebase.svg": "b40e0920e765feba561d65e55beef2e6fa8591c2",
     "/rezapp/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/rezapp/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/rezapp/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -132,8 +132,8 @@
     "/rezapp/fontawesome-webfont.8b43027f47b20503057d.eot": "d980c2ce873dc43af460d4d572d441304499f400",
     "/rezapp/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "/rezapp/fontawesome-webfont.f691f37e57f04c152e23.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "/rezapp/index.html": "7650e5329362c66759e70d6a3ffb23ca9ea1dde8",
-    "/rezapp/main.fde219b00198d68dafe2.js": "d01e69f0276923a8844cd0b2132c2cce99037013",
+    "/rezapp/index.html": "3ed771e8a0f686755e95bfac7a5acb8d24d521df",
+    "/rezapp/main.35ef63b1cc8bb985d8dd.js": "e0abd47b652d06aac490dded06ea52f449714e48",
     "/rezapp/manifest.webmanifest": "f555835846f30b9b191dd87f81fbdbb9c1c092b0",
     "/rezapp/polyfills.0293f561b9f356e39d6b.js": "dca23eb71da16457317ca75308ec9705c65a9104",
     "/rezapp/preloader-red-stripe.a103f51b3ac051ca7151.svg": "90cc14b6016eb6690b187943368a3b864f2f0d0d",
