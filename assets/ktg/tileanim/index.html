@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+    <title>Logos Fade In/Out Version 3</title>
+    <style>
+        body {
+           font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+        body, html {
+            height:90%;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: lighter;
+            text-align: center;
+        }
+        div {
+            box-sizing: border-box;
+        }
+        #mainbox {
+            display: flex;
+            flex-wrap:wrap;
+            max-width: 900px;
+            margin:0 auto;
+            box-shadow: 0 1em 1em #bbb;
+        }
+        .box {
+            min-width:100px;
+            height: 100px;
+        }
+        .fadeOutInFx {
+            animation-name: fadeOutIn;
+            animation-duration: 1s;
+        }
+        @keyframes fadeOutIn {
+            0% {
+                opacity:1;
+            }
+            50% {
+                opacity:0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controlling CSS3 Animation with Javascript</h1>
+    <p class="center">In this demo, each tile is randomly selected with a <em>fade out-in</em> animation applied.</p>
+
+    <div id="mainbox">
+        <!-- set 1 -->
+        <div class="box">
+            <img src="http://placehold.it/100x100/cc00cc/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/009933/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/3333ff/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/cc9900/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/444444/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/ff6666/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/99cc00/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/003366/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/00cc66/ffffff" alt="">
+        </div>
+        <!-- set 2 -->
+        <div class="box">
+            <img src="http://placehold.it/100x100/6666ff/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/ff0000/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/003366/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/00cc66/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/ff9900/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/0099ff/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/ff6666/ffffff" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/ffff00/000000" alt="">
+        </div>
+        <div class="box">
+            <img src="http://placehold.it/100x100/cc00cc/ffffff" alt="">
+        </div>
+    </div>
+
+    <script src="fx2.js"></script>
+</body>
+</html>

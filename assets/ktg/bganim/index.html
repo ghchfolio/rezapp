@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Animated Background</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body, html {
+            height:100%;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        #container {
+            width:600px;
+            height:200px;
+            position:relative;
+            margin:0 auto;
+        }
+        #bkg {
+            width:inherit;
+            height:inherit;
+            background-color:#00cccc;
+            overflow: hidden;
+            position:absolute;
+            border:2px solid #006666;
+            box-shadow: 0 1.5em 1.5em #ccc;
+        }
+        .shape {
+            background-color: teal;
+            position:absolute;
+            opacity: 0;
+            animation-name: fadeInOut;
+            animation-duration:3s;
+            border-radius:400px;
+        }
+        #text {
+            color:white;
+            font-size:180%;
+            position:absolute;
+            padding:1em;
+            text-align:center;
+            text-shadow:2px 2px 0 #006666;
+            width:600px;
+            /*border:1px solid red;*/
+        }
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            50% { opacity: 0.25; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="bkg"></div>
+        <div id="text">This is a background animation test to be used as part of the Kensington Security landing page.</div>
+    </div>
+    <script>
+
+        function Shape() {
+            
+            var _el, _width = 0, _height = 0, _unit = 1, _maxshapes = 10
+
+            var _addToPage = function() {
+                document.getElementById('bkg').appendChild(_el)
+            }
+
+            var _addClass = function() {
+                let delays = ['0ms', '500ms', '1s', '2s']
+                let d = Math.floor( (Math.random() * delays.length) + 1 )
+                d--
+
+                _el.classList.add('shape')
+                _el.style.animationDelay = delays[d]
+                _addToPage()
+            }
+
+            var _removeClass = function() {
+                if ( _el.classList.contains('shape') ) {
+                    _el.classList.remove('shape')
+                }
+                _init()
+            }
+
+            var _listen4AnimEnd = function() {
+                _el.addEventListener('animationend', _removeClass, false)
+                _addClass()
+            }
+
+            var _setYPos = function(){
+                let h = window.innerHeight
+                let rh = Math.floor( (Math.random() * h) + 1 )
+                let rhp = Math.round((rh/h) * 100)
+                _el.style.top = rhp + '%'
+                _listen4AnimEnd()
+            }
+
+            var _setXPos = function(){
+                let w = window.innerWidth
+                let rw = Math.floor( (Math.random() * w) + 1 )
+                let rwp = Math.round((rw/w) * 100)
+                _el.style.left = rwp + '%'
+                _setYPos()
+            }
+
+            var _setSize = function(){
+                let factorials = [1,2,3,4,5,7,8,9,10]
+                let f = Math.floor((Math.random() * factorials.length) + 1)
+                f--
+                _width = factorials[f] * _unit
+                _height = factorials[f] * _unit
+                _el.style.width = _width + 'em'
+                _el.style.height = _height + 'em'
+                _setXPos()
+            }
+
+            var _init = function(){
+                // for (let i=0; i<=_maxshapes;i++) {
+                    _el = document.createElement('div')
+                    _setSize()
+                // }
+            }
+
+            var init = function(){
+                _init()
+            }
+
+            return {
+                init:init
+            }
+        }
+        shapea = new Shape()
+        shapea.init()
+        shapeb = new Shape()
+        shapeb.init()
+        shapec = new Shape()
+        shapec.init()
+        shaped = new Shape()
+        shaped.init()
+        shapee = new Shape()
+        shapee.init()
+        shapef = new Shape()
+        shapef.init()
+
+    </script>
+</body>
+</html>
