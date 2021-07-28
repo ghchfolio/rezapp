@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1627001738190,
+  "timestamp": 1627436358935,
   "index": "/rezapp/index.html",
   "assetGroups": [
     {
@@ -13,12 +13,12 @@
       "urls": [
         "/rezapp/favicon.ico",
         "/rezapp/index.html",
-        "/rezapp/main.52dad2a912c248c2a2c5.js",
+        "/rezapp/main.3808232d0ec49f93537d.js",
         "/rezapp/manifest.webmanifest",
         "/rezapp/polyfills.0293f561b9f356e39d6b.js",
         "/rezapp/runtime.d0516acdca23c8f16ace.js",
         "/rezapp/scripts.1ea38bf599c1f0b70832.js",
-        "/rezapp/styles.41bd16a3aaa49261b7fe.css"
+        "/rezapp/styles.234e410cc3c02a96b4fe.css"
       ],
       "patterns": []
     },
@@ -142,14 +142,14 @@
     "/rezapp/fontawesome-webfont.8b43027f47b20503057d.eot": "d980c2ce873dc43af460d4d572d441304499f400",
     "/rezapp/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "/rezapp/fontawesome-webfont.f691f37e57f04c152e23.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "/rezapp/index.html": "9b194be2460fd4cf8df58f09ecc9fd530c13bd4d",
-    "/rezapp/main.52dad2a912c248c2a2c5.js": "bf7db4adf041d7f6838a6fa10a3660456c3fda21",
+    "/rezapp/index.html": "b976cf740319fb2a26704180f99f391edd73d06d",
+    "/rezapp/main.3808232d0ec49f93537d.js": "df81cf38dc62323c5cf7d6922078371a3dbc500c",
     "/rezapp/manifest.webmanifest": "f555835846f30b9b191dd87f81fbdbb9c1c092b0",
     "/rezapp/polyfills.0293f561b9f356e39d6b.js": "dca23eb71da16457317ca75308ec9705c65a9104",
     "/rezapp/preloader-red-stripe.a103f51b3ac051ca7151.svg": "90cc14b6016eb6690b187943368a3b864f2f0d0d",
     "/rezapp/runtime.d0516acdca23c8f16ace.js": "8bc8b14150290c9742cd0b0459c8d12256e143a1",
     "/rezapp/scripts.1ea38bf599c1f0b70832.js": "9bc05a00f1d96cc82eceb79989d81c4a676cd877",
-    "/rezapp/styles.41bd16a3aaa49261b7fe.css": "17f1d58677465cfcce7189000dd44aaad93bc7fc"
+    "/rezapp/styles.234e410cc3c02a96b4fe.css": "8f3dee08d689b34a2e0317e3ff69cd61159aebbc"
   },
   "navigationUrls": [
     {
