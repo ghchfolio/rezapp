@@ -1,0 +1,65 @@
+{
+  "homePage": {
+     "nav": {
+        "home":"Home",
+        "gallery":"Gallery",
+        "about": "About",
+        "menu": {
+           "en":"English",
+           "fr": "French"
+        }
+     },
+     "experienceSection": {
+        "year": "year",
+        "years": "years"
+     },
+     "nowSection": {
+        "title": "Currently FR",
+        "primaryRole": {
+           "subTitle": "Primary Role & Responsibilities",
+           "details" : {
+              "Environment": ".Net" ,
+              "Role": "UI Developer",
+              "Tech Stack": "AngularJS, Angular 5, BootStrap 4, JQuery, SASS",
+              "Programs": "Microsoft Visual Studio",
+              "Responsibilities": "Develop new UI features per the direction of the User Experience and Customer Experience members" 
+           }
+        },
+        "secondaryRole": {
+         "subTitle": "Secondary Role & Responsibilities",
+         "details": {
+            "Environment": "NodeJS",
+            "Role": "UI/UX Designer",
+            "Tech Stack":"Angular (latest)",
+            "Programs": "Visual Studio Code, LESS, Balsamiq, PhotoShop CC",
+            "Responsibilities":"Create wireframes, low/high fidelity proof-of-concepts andupdate Sitecore CMS assets per request"
+         }
+      }
+     },
+     "otherSection": {
+        "title": "Other Projects",
+        "items": ["A progressive web app that served short stories using Vanilla JavaScript, Workbox, ParcelJS, NodeJS, Firebase"]
+     },
+     "certificatesSection": {
+        "title": "Certificates",
+        "items": ["Angular Progressive Web Apps (2019)", "JavaScript Debugging Crash Course (2019)", 
+         "JavaScript: Understanding the Weird Parts (2019)"]
+     },
+     "interestsSection":{
+        "title":"Interests",
+        "items":["Angular projects (primarily) and exploring simple React/Vue/Svelte projects", "Working remotely"
+         ]
+     }
+
+  },
+  "galleryPage": {
+     "caption":"caption",
+     "label":"Only projects with demos",
+     "noDemos":"The demo is unavailable.",
+     "btnGOLabel":"GO"
+  },
+  "aboutPage":[
+     "I am a UI Developer with a background in Multimedia/Interactive Design. I have experience with NodeJS (creating APIs, small Express apps, proof-of-concepts, prototypes etc.).", "I enjoy discussing JavaScript, frameworks and libraries in forums and had the good fortune of hosting JavaScript meetups with TechSith Tutorials."
+  ],
+  "updates":"Updates"
+}
