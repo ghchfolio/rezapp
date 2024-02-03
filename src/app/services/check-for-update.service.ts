@@ -27,17 +27,14 @@ export class CheckForUpdateService {
     constructor(appRef: ApplicationRef, updates: SwUpdate) {
         // Allow app to stabilize first, before starting
         const appIsStable$ = appRef.isStable.pipe(first(isStable => isStable === true));
-        const hr = (environment.production) ? 1 : 0.0125; // 1hr or 45 seconds
+        const hr = 1; // 1hr or 0.0125 (40 secs)
         const myInterval$ = interval(hr * 60 * 60 * 1000);
         const myIntervalOnceAppIsStable$ = concat(appIsStable$, myInterval$);
 
         myIntervalOnceAppIsStable$.subscribe(async () => {
             try {
                 const updateFound = await updates.checkForUpdate();
-
-                if (environment.production === false) {
-                    console.log(updateFound ? 'A new version is available.' : 'Already on the latest version.');
-                }
+                // console.log(updateFound ? 'A new version is available.' : 'Already on the latest version.');
 
                 if (updateFound) {
                     if (window.confirm('A new version is available.\nReload the page now?')) {
