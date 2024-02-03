@@ -11,13 +11,21 @@ import { GallerySortService } from '../../services/gallery-sort.service';
     imports: [FormsModule],
     template: `
     @if (isGalleryPage) {
-<form id="search" class="d-flex mb-2" role="search">
-    <input id="term" (keyup)="setSearchTerm($event)" class="form-control me-2" type="text" placeholder="Search"
-        aria-label="Search" class="form-control me-2" />
-</form>
-}
+        <form id="search" class="d-flex mb-2" role="search">
+            <input id="term" (keyup)="setSearchTerm($event)" class="form-control me-2 text-dark" type="text" placeholder="Search"
+                aria-label="Search" class="form-control me-2" />
+        </form>
+    }
   `,
-    styles: ``
+    styles: `
+    #term {
+        background-color:white;
+        color:black;
+    }
+    input::placeholder {
+        color:gray;
+    }
+    `
 })
 export class GallerySearchComponent {
     #gallerSortService = inject(GallerySortService);
