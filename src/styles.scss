@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+@use './gradient-bg.scss';
+
+:root {
+    --accent1: #d81b60;
+    --accent2: #009eb3;
+}
+
+#container {
+    font-size: 1.3rem;
+    padding-top: 7rem !important;
+}
+
+#approot {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+}
+
+.bars {
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.thumbs {
+    border-radius: 500px;
+    border: 5px solid var(--accent2);
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.thumbs.unavailable {
+    border-color: #ccc !important;
+}
+
+#container {
+    padding-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.dark-bg-tint {
+    background-color: rgba(0, 0, 0, .55) !important;
+}
+
+// .min-list {
+//     padding: 0.3rem 1.2rem;
+// }
+
+dl {
+    dt {
+        color: var(--accent1);
+        text-transform: uppercase;
+        margin-top: 2rem;
+
+        dd {
+            margin-left: 1rem;
+        }
+    }
+}
+
+#exampleModal .modal-content {
+    color: black;
+}
+
+@media screen and (min-width:1024px) {
+    #container {
+        max-width: 85%;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    #container {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    #container {
+        max-width: 45%;
+    }
+}
