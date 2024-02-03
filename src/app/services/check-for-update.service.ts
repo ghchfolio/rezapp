@@ -35,7 +35,7 @@ export class CheckForUpdateService {
             try {
                 const updateFound = await updates.checkForUpdate();
 
-                if (!environment.production) {
+                if (environment.production === false) {
                     console.log(updateFound ? 'A new version is available.' : 'Already on the latest version.');
                 }
 
