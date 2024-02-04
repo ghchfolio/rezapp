@@ -28,8 +28,8 @@ export class CheckForUpdateService {
                     const newAppVersioInfo: IModalProps = {
                         content: {
                             id: 1,
-                            title: 'New Version Of App Is Ready',
-                            body: 'Do you want to reload now?',
+                            title: 'A New Version Is Available',
+                            body: 'Do you want to reload the page now?',
                             cancelButtonLabel: 'No',
                             confirmButtonLabel: 'Yes'
                         },
