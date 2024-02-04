@@ -4,7 +4,6 @@ import { concat, interval } from 'rxjs';
 import { first } from 'rxjs/operators';
 import { ModalService } from './modal.service';
 import { IModalProps } from '../models/modal-props.model';
-import { environment } from '../../environments/environment.development';
 
 @Injectable({
     providedIn: 'root'
@@ -42,8 +41,6 @@ export class CheckForUpdateService {
                     //     window.document.location.reload();
                     // }
                 }
-
-                // if (updateFound) this.#modalService.setModal(this.#modalProps);
             } catch (err) {
                 console.error('Failed to check for updates:', err);
             }
