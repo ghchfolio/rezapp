@@ -5,12 +5,12 @@ import { MediaQueryService } from './services/media-query.service';
 import { CheckForUpdateService } from './services/check-for-update.service';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-// import { ModalComponent } from './shared/modal/modal.component';
+import { ModalComponent } from './shared/modal/modal.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [RouterOutlet, HeaderComponent, FooterComponent],
+    imports: [RouterOutlet, HeaderComponent, FooterComponent, ModalComponent],
     template: `
     <app-header />
 
@@ -19,7 +19,7 @@ import { FooterComponent } from './shared/footer/footer.component';
         <app-footer [appTitle]="appTitle" />
     </div>
 
-    <!-- <app-modal /> -->
+    <app-modal />
   `,
     styles: [],
 })

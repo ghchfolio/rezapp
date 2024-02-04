@@ -10,19 +10,7 @@ import { environment } from '../../environments/environment.development';
     providedIn: 'root'
 })
 export class CheckForUpdateService {
-    // #modalService = inject(ModalService);
-
-    // #modalProps: IModalProps = {
-    //     content: {
-    //         id: 1,
-    //         title: 'New Version Of App Is Ready',
-    //         body: 'Do you want to reload now?',
-    //         cancelButtonLabel: 'No',
-    //         confirmButtonLabel: 'Yes'
-    //     },
-    //     confirmAction: function () { window.document.location.reload(); },
-    //     cancelAction: null
-    // }
+    #modalService = inject(ModalService);
 
     constructor(appRef: ApplicationRef, updates: SwUpdate) {
         // Allow app to stabilize first, before starting
@@ -37,9 +25,22 @@ export class CheckForUpdateService {
                 // console.log(updateFound ? 'A new version is available.' : 'Already on the latest version.');
 
                 if (updateFound) {
-                    if (window.confirm('A new version is available.\nReload the page now?')) {
-                        window.document.location.reload();
+                    const newAppVersioInfo: IModalProps = {
+                        content: {
+                            id: 1,
+                            title: 'New Version Of App Is Ready',
+                            body: 'Do you want to reload now?',
+                            cancelButtonLabel: 'No',
+                            confirmButtonLabel: 'Yes'
+                        },
+                        confirmAction: function () { window.document.location.reload(); },
+                        cancelAction: function () { return undefined }
                     }
+
+                    this.#modalService.setModal(newAppVersioInfo);
+                    // if (window.confirm('A new version is available.\nReload the page now?')) {
+                    //     window.document.location.reload();
+                    // }
                 }
 
                 // if (updateFound) this.#modalService.setModal(this.#modalProps);
