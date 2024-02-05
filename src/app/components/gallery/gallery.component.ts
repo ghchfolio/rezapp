@@ -20,6 +20,8 @@ import { ToastComponent } from '../../shared/toast/toast.component';
     <div id="gallery">
         @for(sample of samples$$() | searchFilter:term; track sample.id) {
             <app-gallery-thumbnails [sample]="sample" />
+        } @empty {
+            <h2>No samples found...</h2>
         }
     </div>
   `,
