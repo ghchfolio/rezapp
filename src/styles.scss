@@ -41,10 +41,9 @@ a {
     width: 200px;
     height: 200px;
     margin: 0 auto;
-}
 
     & .unavailable {
-    border-color: #ccc !important;
+        border-color: #ccc !important;
     }
 }
 
@@ -56,10 +55,6 @@ a {
 .dark-bg-tint {
     background-color: rgba(0, 0, 0, .55) !important;
 }
-
-// .min-list {
-//     padding: 0.3rem 1.2rem;
-// }
 
 dl {
     dt {
