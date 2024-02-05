@@ -16,8 +16,8 @@ import * as bootstrap from 'bootstrap';
         <div class="container">
             <a class="navbar-brand" href="#">C H F O L I O</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks"
-                aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation" id="navbarBtn">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop" aria-expanded="false"  id="navbarBtn">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
