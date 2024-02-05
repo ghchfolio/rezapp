@@ -41,8 +41,9 @@ a {
     margin: 0 auto;
 }
 
-.thumbs.unavailable {
+    & .unavailable {
     border-color: #ccc !important;
+    }
 }
 
 #container {
