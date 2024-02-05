@@ -15,13 +15,13 @@ import { GallerySearchComponent } from "../gallery-search/gallery-search.compone
         <div class="offcanvas-body">
             <div>
                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-3 my-1">
+                    <li class="nav-item mx-3 my-3">
                         <a class="nav-link" aria-current="page" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" data-bs-dismiss="offcanvas">Home</a>
                     </li>
-                    <li class="nav-item mx-3 my-1">
+                    <li class="nav-item mx-3 my-3">
                         <a class="nav-link" routerLink="/gallery" routerLinkActive="active" ariaCurrentWhenActive="page" data-bs-dismiss="offcanvas">Gallery</a>
                     </li>
-                    <li class="nav-item mx-3 my-1">
+                    <li class="nav-item mx-3 my-3">
                         <a class="nav-link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" data-bs-dismiss="offcanvas">About</a>
                     </li>
                 </ul>
