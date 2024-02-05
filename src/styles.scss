@@ -11,6 +11,10 @@
     background: linear-gradient(45deg, var(--accent1) 45%, var(--accent2) 100%);
 }
 
+.nav-link {
+    font-size: larger !important;
+}
+
 #container {
     font-size: 1.3rem;
     padding-top: 7rem !important;
