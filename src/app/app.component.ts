@@ -11,14 +11,12 @@ import { SideNavComponent } from "./shared/side-nav/side-nav.component";
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [RouterOutlet, HeaderComponent, FooterComponent, ModalComponent],
     template: `
     <app-header />
     <app-side-nav />
 
     <div id="container" class="container">
         <router-outlet />
-        <app-footer [appTitle]="appTitle" />
     </div>
 
     <app-footer [appTitle]="appTitle" />
