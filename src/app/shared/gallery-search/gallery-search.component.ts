@@ -3,7 +3,6 @@ import { FormsModule } from '@angular/forms';
 import { NavigationStart, Router, Event as NavigationEvent } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { GallerySearchService } from '../../services/gallery-search.service';
-import { GallerySortService } from '../../services/gallery-sort.service';
 
 @Component({
     selector: 'app-gallery-search',
@@ -28,15 +27,12 @@ import { GallerySortService } from '../../services/gallery-sort.service';
     `
 })
 export class GallerySearchComponent {
-    #gallerSortService = inject(GallerySortService);
     #gallerySearchService = inject(GallerySearchService);
     #router = inject(Router);
     #subs = new Subscription();
 
-    type = 'all';
     term = '';
     isGalleryPage = false;
-    sortDir = 'des';
 
     ngOnInit() {
         this.#subs.add(this.#gallerySearchService.getSearchTerm().subscribe(term => this.term = term));
@@ -46,17 +42,12 @@ export class GallerySearchComponent {
                 if (event instanceof NavigationStart) this.isGalleryPage = (event.url === '/gallery');
             })
         );
-
-        document.getElementById('term')?.focus();
     }
 
     setSearchTerm(evt: KeyboardEvent | null) {
-        const term: string = (evt?.target as HTMLInputElement).value;
-        this.#gallerySearchService.setSearchTerm(term);
-    }
+        const term = (evt?.target as HTMLInputElement).value;
 
-    sortDirection() {
-        this.#gallerSortService.setSortDirection(this.sortDir);
+        this.#gallerySearchService.setSearchTerm(term);
     }
 
     onDestroy() {

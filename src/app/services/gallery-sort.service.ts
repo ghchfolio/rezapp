@@ -5,14 +5,13 @@ import { ISample } from '../models/sample.model';
     providedIn: 'root'
 })
 export class GallerySortService {
-    dataStore: ISample[] = [];
-    sortDir: string = 'des';
-    samples$$ = signal(this.dataStore);
+    #dataStore: ISample[] = [];
+    samples$$ = signal(this.#dataStore);
 
     setDataSource(data: ISample[]) {
         if (data.length) {
-            this.dataStore = data.sort((a: ISample, b: ISample) => (a.year > b.year) ? -1 : 1);
-            this.samples$$.update(() => JSON.parse(JSON.stringify(this.dataStore)));
+            this.#dataStore = data.sort((a: ISample, b: ISample) => (a.year > b.year) ? -1 : 1);
+            this.samples$$.update(() => JSON.parse(JSON.stringify(this.#dataStore)));
         }
     }
 }
