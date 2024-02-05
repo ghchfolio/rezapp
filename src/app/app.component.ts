@@ -6,6 +6,7 @@ import { CheckForUpdateService } from './services/check-for-update.service';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ModalComponent } from './shared/modal/modal.component';
+import { SideNavComponent } from "./shared/side-nav/side-nav.component";
 
 @Component({
     selector: 'app-root',
@@ -13,6 +14,7 @@ import { ModalComponent } from './shared/modal/modal.component';
     imports: [RouterOutlet, HeaderComponent, FooterComponent, ModalComponent],
     template: `
     <app-header />
+    <app-side-nav />
 
     <div id="container" class="container">
         <router-outlet />
@@ -22,6 +24,7 @@ import { ModalComponent } from './shared/modal/modal.component';
     <app-modal />
   `,
     styles: [],
+    imports: [RouterOutlet, HeaderComponent, FooterComponent, ModalComponent, SideNavComponent]
 })
 export class AppComponent {
     #cfus = inject(CheckForUpdateService);
