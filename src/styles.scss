@@ -1,7 +1,9 @@
 @use './gradient-bg.scss';
 
 :root {
+    --accent1-light: #f54b89;
     --accent1: #d81b60;
+    --accent1-dark: #ba094a;
     --accent2: #009eb3;
 }
 
@@ -61,7 +63,7 @@ a {
 
 dl {
     dt {
-        color: var(--accent1);
+        color: var(--accent1-light);
         text-transform: uppercase;
         margin-top: 2rem;
 
