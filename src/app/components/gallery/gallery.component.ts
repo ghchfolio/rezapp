@@ -3,12 +3,10 @@ import { FormsModule } from '@angular/forms';
 import { SamplesService } from '../../services/samples.service';
 import { ToastService } from '../../services/toast.service';
 import { GallerySearchService } from '../../services/gallery-search.service';
-import { GallerySortService } from '../../services/gallery-sort.service';
 import { FilterPipe } from '../../pipes/filter.pipe';
 import { GalleryThumbnailsComponent } from '../../shared/gallery-thumbnails/gallery-thumbnails.component';
 import { ProjectUnavailableComponent } from '../../shared/project-unavailable/project-unavailable.component';
 import { ToastComponent } from '../../shared/toast/toast.component';
-
 
 @Component({
     selector: 'app-gallery',
@@ -96,11 +94,10 @@ export class GalleryComponent {
     #samplesService = inject(SamplesService);
     #toastService = inject(ToastService);
     #gallerySearchService = inject(GallerySearchService);
-    #gallerySortService = inject(GallerySortService);
     #searchSub = this.#gallerySearchService.getSearchTerm().subscribe(term => this.term = term)
 
-    samples$$ = this.#gallerySortService.samples$$;
-    type = 'all';
+    samples$$ = this.#samplesService.samples$$;
+
     term = '';
 
     ngOnInit() {

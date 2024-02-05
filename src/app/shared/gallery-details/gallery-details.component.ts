@@ -2,7 +2,6 @@ import { Component, computed, inject, signal } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { GallerySortService } from '../../services/gallery-sort.service';
 import { SamplesService } from '../../services/samples.service';
 import { ProjectUnavailableComponent } from '../project-unavailable/project-unavailable.component';
 
@@ -95,7 +94,6 @@ import { ProjectUnavailableComponent } from '../project-unavailable/project-unav
 })
 export class GalleryDetailsComponent {
     #samplesService = inject(SamplesService);
-    #gallerySortService = inject(GallerySortService);
     #route = inject(ActivatedRoute);
     #router = inject(Router);
     #sub = new Subscription();
@@ -103,7 +101,7 @@ export class GalleryDetailsComponent {
     contentAvailable = false;
 
     id$$ = signal(0);
-    samples$$ = this.#gallerySortService.samples$$;
+    samples$$ = this.#samplesService.samples$$;
     sample$$ = computed(() => this.updateSample());
 
     ngOnInit() {
