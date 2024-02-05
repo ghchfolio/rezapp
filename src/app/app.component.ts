@@ -21,6 +21,8 @@ import { SideNavComponent } from "./shared/side-nav/side-nav.component";
         <app-footer [appTitle]="appTitle" />
     </div>
 
+    <app-footer [appTitle]="appTitle" />
+
     <app-modal />
   `,
     styles: [],
