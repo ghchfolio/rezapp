@@ -1,27 +1,14 @@
 # Rezapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+An online portfolio showcasing various samples of **front-end/UI** projects.
 
-## Development server
+[Visit the page](https://ghchfolio.github.io/rezapp/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### About the App
 
-## Code scaffolding
+This is a single page, progressive web app.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Latest upgrades:
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Angular 17.1.2
+- Bootstrap 5.3.2
