@@ -46,7 +46,7 @@ import * as bootstrap from 'bootstrap';
     }
 
     .nav-progress-bg {
-        background-image:repeating-linear-gradient(-45deg, var(--accent1) 0px, var(--accent1) 20px, #ba094a 20px, #ba094a 40px);
+        background-image:repeating-linear-gradient(-45deg, var(--accent1) 0px, var(--accent1) 20px, var(--accent1-dark) 20px, var(--accent1-dark) 40px);
         background-size: 200% 100%;
         animation: barberpole 20s linear infinite;
     }
