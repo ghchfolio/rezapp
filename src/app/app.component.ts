@@ -31,7 +31,7 @@ export class AppComponent {
     #mqs = inject(MediaQueryService);
     #router = inject(Router);
 
-    viewPortSub = new Subscription();
+    #viewPortSub = new Subscription();
 
     appTitle = 'CHFolio';
     pgTitle = '';
@@ -41,7 +41,7 @@ export class AppComponent {
     ngAfterViewInit() {
         this.updatePgTitleAfterRouted();
         this.gradientBgEl = document.getElementById('gradientBg');
-        this.viewPortSub = this.#mqs.isSmallView$.subscribe(
+        this.#viewPortSub = this.#mqs.isSmallView$.subscribe(
             {
                 next: (isSmall) => {
                     if (this.gradientBgEl) {
@@ -83,6 +83,6 @@ export class AppComponent {
     }
 
     ngOnDestroy() {
-        this.viewPortSub.unsubscribe();
+        this.#viewPortSub.unsubscribe();
     }
 }
