@@ -8,7 +8,7 @@ import { GallerySearchComponent } from "../gallery-search/gallery-search.compone
     template: `
     <div class="offcanvas offcanvas-start nav-gradient-bg" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel" data-bs-theme="dark">
         <div class="offcanvas-header">
-            <div class="offcanvas-title" id="staticBackdropLabel">M E N U</div>
+            <h5 class="offcanvas-title" id="staticBackdropLabel">M E N U</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
