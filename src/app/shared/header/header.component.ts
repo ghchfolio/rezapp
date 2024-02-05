@@ -55,11 +55,12 @@ import { FilterPipe } from '../../pipes/filter.pipe';
 export class HeaderComponent {
     #serverReqService = inject(ServerRequestService);
 
-    isLoading$ = this.#serverReqService.isLoading$;
     isLoading = false;
-    sub = this.isLoading$.subscribe(res => this.isLoading = res);
+    isLoading$ = this.#serverReqService.isLoading$;
+
+    #sub = this.isLoading$.subscribe(res => this.isLoading = res);
 
     ngOnDestroy() {
-        this.sub.unsubscribe();
+        this.#sub.unsubscribe();
     }
 }
