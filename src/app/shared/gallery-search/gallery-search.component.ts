@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NavigationStart, Router, Event as NavigationEvent } from '@angular/router';
 import { BehaviorSubject, Subscription, debounceTime, distinctUntilChanged } from 'rxjs';
 import { GallerySearchService } from '../../services/gallery-search.service';
+import { GalleryPageIsActiveService } from '../../services/gallery-page-is-active.service';
 
 @Component({
     selector: 'app-gallery-search',
@@ -29,7 +29,8 @@ import { GallerySearchService } from '../../services/gallery-search.service';
 })
 export class GallerySearchComponent {
     #gallerySearchService = inject(GallerySearchService);
-    #router = inject(Router);
+    #gpia = inject(GalleryPageIsActiveService)
+
     #termSubj$ = new BehaviorSubject('');
     #allSubs = new Subscription();
 
@@ -42,12 +43,9 @@ export class GallerySearchComponent {
                 .subscribe(term => this.term = term)
         );
 
-        this.#allSubs.add(this.#router.events
-            .subscribe((event: NavigationEvent) => {
-                if (event instanceof NavigationStart) {
-                    this.isGalleryPage = (event.url === '/gallery');
-                }
-            })
+        this.#allSubs.add(
+            this.#gpia.isGalleryPage$
+                .subscribe(isGalleryPg => this.isGalleryPage = isGalleryPg)
         );
 
         this.#allSubs.add(
