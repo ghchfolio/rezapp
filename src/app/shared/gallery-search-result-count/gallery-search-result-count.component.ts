@@ -9,7 +9,7 @@ import { Subscription } from 'rxjs';
     imports: [],
     template: `
     @if (isGalleryPage) {
-        <p class="text-center my-4">
+        <p class="text-center fs-5 my-4">
             Matches Found: {{ matchedCount }}
         </p>
     }
