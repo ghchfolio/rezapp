@@ -1,0 +1,1 @@
+import{Da as n,Ja as o,ca as r}from"./chunk-MAIQV6FN.js";var a=(()=>{let t=class t{constructor(i){this.viewContainerRef=i}};t.\u0275fac=function(c){return new(c||t)(n(o))},t.\u0275dir=r({type:t,selectors:[["","loadComponent",""]],standalone:!0});let e=t;return e})();export{a};
