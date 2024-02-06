@@ -10,18 +10,19 @@ import { GalleryPageIsActiveService } from '../../services/gallery-page-is-activ
     imports: [FormsModule],
     template: `
     @if (isGalleryPage) {
-        <form id="search" class="d-flex mb-2" role="search">
-            <input id="term" name="term" class="form-control me-2 text-dark" type="text" placeholder="Search" aria-label="Search" class="form-control me-2"
-            [ngModel]="term"
-            (ngModelChange)="setSearchTerm($event)" />
+        <form id="search" class="row g-3" role="search">
+            <div class="col-lg-6">
+                <input name="term" class="form-control text-dark bg-light" type="text" placeholder="Search" aria-label="Search"
+                [ngModel]="term"
+                (ngModelChange)="setSearchTerm($event)" />
+            </div>
+            <div class="col-lg-6">
+                <button class="btn btn-primary w-100" type="reset" (click)="onReset()">Reset</button>
+            </div>
         </form>
     }
   `,
     styles: `
-    #term {
-        background-color:white;
-        color:black;
-    }
     input::placeholder {
         color:gray;
     }
@@ -29,7 +30,7 @@ import { GalleryPageIsActiveService } from '../../services/gallery-page-is-activ
 })
 export class GallerySearchComponent {
     #gallerySearchService = inject(GallerySearchService);
-    #gpia = inject(GalleryPageIsActiveService)
+    #gpia = inject(GalleryPageIsActiveService);
 
     #termSubj$ = new BehaviorSubject('');
     #allSubs = new Subscription();
@@ -60,6 +61,10 @@ export class GallerySearchComponent {
 
     setSearchTerm(inputVal: string) {
         this.#termSubj$.next(inputVal);
+    }
+
+    onReset() {
+        this.setSearchTerm('');
     }
 
     onDestroy() {

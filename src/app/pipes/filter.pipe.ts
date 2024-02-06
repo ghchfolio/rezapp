@@ -7,19 +7,18 @@ import { GallerySearchService } from '../services/gallery-search.service';
     standalone: true
 })
 export class FilterPipe implements PipeTransform {
-    #gss = inject(GallerySearchService)
+    #gss = inject(GallerySearchService);
+    arr: ISample[] = [];
 
     transform(samples: ISample[], term: string): ISample[] {
-        let arr: ISample[] = [];
-
-        if (term === '') {
-            arr = [...samples];
+        if (typeof (term) !== 'string') {
+            this.arr = [...samples];
         } else {
-            arr = samples.filter(t => t.caption.toLowerCase().includes(term.toLowerCase()));
+            this.arr = samples.filter(t => t.caption.toLowerCase().includes(term.toLowerCase()));
         }
 
-        this.#gss.setGallerySearchCount(arr.length);
+        this.#gss.setGallerySearchCount(this.arr.length);
 
-        return arr;
+        return this.arr;
     }
 }
