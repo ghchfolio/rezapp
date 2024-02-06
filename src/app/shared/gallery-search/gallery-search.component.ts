@@ -11,7 +11,7 @@ import { GallerySearchService } from '../../services/gallery-search.service';
     template: `
     @if (isGalleryPage) {
         <form id="search" class="d-flex mb-2" role="search">
-            <input id="term" (keyup)="setSearchTerm($event)" class="form-control me-2 text-dark" type="text" placeholder="Search"
+            <input id="term" (keyup)="setSearchTerm($event)" class="form-control me-2 text-dark" type="text" placeholder="Search" [value]="term"
                 aria-label="Search" class="form-control me-2" />
         </form>
     }
