@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NavigationStart, Router, Event as NavigationEvent } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { BehaviorSubject, Subscription, debounceTime, distinctUntilChanged } from 'rxjs';
 import { GallerySearchService } from '../../services/gallery-search.service';
 
 @Component({
@@ -11,8 +11,9 @@ import { GallerySearchService } from '../../services/gallery-search.service';
     template: `
     @if (isGalleryPage) {
         <form id="search" class="d-flex mb-2" role="search">
-            <input id="term" (keyup)="setSearchTerm($event)" class="form-control me-2 text-dark" type="text" placeholder="Search" [value]="term"
-                aria-label="Search" class="form-control me-2" />
+            <input id="term" name="term" class="form-control me-2 text-dark" type="text" placeholder="Search" aria-label="Search" class="form-control me-2"
+            [ngModel]="term"
+            (ngModelChange)="setSearchTerm($event)" />
         </form>
     }
   `,
@@ -29,28 +30,41 @@ import { GallerySearchService } from '../../services/gallery-search.service';
 export class GallerySearchComponent {
     #gallerySearchService = inject(GallerySearchService);
     #router = inject(Router);
-    #subs = new Subscription();
+    #termSubj$ = new BehaviorSubject('');
+    #allSubs = new Subscription();
 
     term = '';
     isGalleryPage = false;
 
     ngOnInit() {
-        this.#subs.add(this.#gallerySearchService.getSearchTerm().subscribe(term => this.term = term));
+        this.#allSubs.add(
+            this.#gallerySearchService.getSearchTerm()
+                .subscribe(term => this.term = term)
+        );
 
-        this.#subs.add(this.#router.events
+        this.#allSubs.add(this.#router.events
             .subscribe((event: NavigationEvent) => {
-                if (event instanceof NavigationStart) this.isGalleryPage = (event.url === '/gallery');
+                if (event instanceof NavigationStart) {
+                    this.isGalleryPage = (event.url === '/gallery');
+                }
             })
+        );
+
+        this.#allSubs.add(
+            this.#termSubj$
+                .pipe(
+                    distinctUntilChanged(),
+                    debounceTime(500)
+                )
+                .subscribe(term => this.#gallerySearchService.setSearchTerm(term))
         );
     }
 
-    setSearchTerm(evt: KeyboardEvent | null) {
-        const term = (evt?.target as HTMLInputElement).value;
-
-        this.#gallerySearchService.setSearchTerm(term);
+    setSearchTerm(inputVal: string) {
+        this.#termSubj$.next(inputVal);
     }
 
     onDestroy() {
-        this.#subs.unsubscribe();
+        this.#allSubs.unsubscribe();
     }
 }
