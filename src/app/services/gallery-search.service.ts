@@ -5,17 +5,18 @@ import { BehaviorSubject } from 'rxjs';
     providedIn: 'root'
 })
 export class GallerySearchService {
-    #searchTerm$ = new BehaviorSubject<string>('');
+    #searchTermBSubj = new BehaviorSubject<string>('');
+    searchTerm$ = this.#searchTermBSubj.asObservable();
 
     constructor() {
         this.setSearchTerm('');
     }
 
     setSearchTerm(term: string) {
-        this.#searchTerm$.next(term);
+        this.#searchTermBSubj.next(term);
     }
 
     getSearchTerm() {
-        return this.#searchTerm$.asObservable();
+        return this.#searchTermBSubj.asObservable();
     }
 }
