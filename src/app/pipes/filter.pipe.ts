@@ -10,9 +10,13 @@ export class FilterPipe implements PipeTransform {
     #gss = inject(GallerySearchService)
 
     transform(samples: ISample[], term: string): ISample[] {
-        if (typeof (term) !== 'string') return samples;
+        let arr: ISample[] = [];
 
-        const arr = samples.filter(t => t.caption.toLowerCase().includes(term.toLowerCase()));
+        if (term === '') {
+            arr = [...samples];
+        } else {
+            arr = samples.filter(t => t.caption.toLowerCase().includes(term.toLowerCase()));
+        }
 
         this.#gss.setGallerySearchCount(arr.length);
 
