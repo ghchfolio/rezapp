@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { GallerySearchComponent } from "../gallery-search/gallery-search.component";
+import { GallerySearchResultCountComponent } from "../gallery-search-result-count/gallery-search-result-count.component";
 
 @Component({
     selector: 'app-side-nav',
@@ -27,11 +28,13 @@ import { GallerySearchComponent } from "../gallery-search/gallery-search.compone
                 </ul>
 
                  <app-gallery-search />
+
+                 <app-gallery-search-result-count />
             </div>
         </div>
     </div>
   `,
     styles: ``,
-    imports: [RouterLink, RouterLinkActive, GallerySearchComponent]
+    imports: [RouterLink, RouterLinkActive, GallerySearchComponent, GallerySearchResultCountComponent]
 })
 export class SideNavComponent { }

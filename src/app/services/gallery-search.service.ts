@@ -7,6 +7,9 @@ import { BehaviorSubject } from 'rxjs';
 export class GallerySearchService {
     #searchTermBSubj = new BehaviorSubject<string>('');
     searchTerm$ = this.#searchTermBSubj.asObservable();
+    #gallerySearchCountBSubj = new BehaviorSubject(0);
+
+    gallerySearchCount$ = this.#gallerySearchCountBSubj.asObservable();
 
     constructor() {
         this.setSearchTerm('');
@@ -18,5 +21,9 @@ export class GallerySearchService {
 
     getSearchTerm() {
         return this.#searchTermBSubj.asObservable();
+    }
+
+    setGallerySearchCount(cnt: number) {
+        this.#gallerySearchCountBSubj.next(cnt);
     }
 }
