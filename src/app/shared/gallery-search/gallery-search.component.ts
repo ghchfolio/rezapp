@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BehaviorSubject, Subscription, debounceTime, distinctUntilChanged } from 'rxjs';
 import { GallerySearchService } from '../../services/gallery-search.service';
 import { GalleryPageIsActiveService } from '../../services/gallery-page-is-active.service';
+import { MediaQueryService } from '../../services/media-query.service';
 
 @Component({
     selector: 'app-gallery-search',
@@ -17,7 +18,13 @@ import { GalleryPageIsActiveService } from '../../services/gallery-page-is-activ
                 (ngModelChange)="setSearchTerm($event)" />
             </div>
             <div class="col-lg-6">
-                <button class="btn btn-primary w-100" type="reset" (click)="onReset()">Reset</button>
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-light w-50" type="reset" (click)="onReset()">Reset</button>
+
+                    @if(isSmallView) {
+                        <button type="button" class="btn btn-primary w-50 ms-3" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
+                    }
+                </div>
             </div>
         </form>
     }
@@ -30,6 +37,7 @@ import { GalleryPageIsActiveService } from '../../services/gallery-page-is-activ
 })
 export class GallerySearchComponent {
     #gallerySearchService = inject(GallerySearchService);
+    #mqs = inject(MediaQueryService);
     #gpia = inject(GalleryPageIsActiveService);
 
     #termSubj$ = new BehaviorSubject('');
@@ -37,6 +45,7 @@ export class GallerySearchComponent {
 
     term = '';
     isGalleryPage = false;
+    isSmallView: boolean | null = false;
 
     ngOnInit() {
         this.#allSubs.add(
@@ -57,6 +66,11 @@ export class GallerySearchComponent {
                 )
                 .subscribe(term => this.#gallerySearchService.setSearchTerm(term))
         );
+
+        this.#allSubs.add(
+            this.#mqs.isSmallView$
+                .subscribe(isSmallView => this.isSmallView = isSmallView)
+        )
     }
 
     setSearchTerm(inputVal: string) {
