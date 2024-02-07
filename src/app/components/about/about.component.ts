@@ -10,11 +10,8 @@ import { BarComponent } from '../../shared/bar/bar.component';
     <div class="row">
         <div class="col">
             <div class="card card-body dark-bg-tint">
-                <p>A UI Developer with a background in Multimedia/Interactive Design who enjoys front-end web development.
-                    Additionally, some Razor pages experience has been gained as well.
+                <p>I am an Angular UI Developer with .Net Core full stack experience with a background in Multimedia & Interactive Design. I also have (to a lesser extent) experience with ReactJS and SvlelteKit.
                 </p>
-
-                <p>Other tech-stack interests are Angular SSR, Svelte, Web VR and 3D modeling.</p>
 
                 <!-- certs -->
                 <dl>
