@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { SamplesService } from '../../services/samples.service';
 import { ProjectUnavailableComponent } from '../project-unavailable/project-unavailable.component';
+import { MediaQueryService } from '../../services/media-query.service';
 
 @Component({
     selector: 'app-gallery-details',
@@ -54,15 +55,18 @@ import { ProjectUnavailableComponent } from '../project-unavailable/project-unav
     <div class="row mt-5">
         <div class="col text-center">
             <!-- prev btn -->
-            <button class="btn btn-primary" [disabled]="id$$() <= 1" (click)="onPrev()">
+            <button class="btn btn-primary" [disabled]="id$$() <= 1" (click)="onPrev()"
+            [ngClass]="{'btn-lg':isSmallView}">
                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
             </button>
 
             <!-- go btn -->
-            <button class="btn btn-primary mx-4" [disabled]="!contentAvailable" (click)="onGo()">GO</button>
+            <button class="btn btn-primary mx-4" [disabled]="!contentAvailable" (click)="onGo()"
+            [ngClass]="{'btn-lg':isSmallView}">GO</button>
 
             <!-- next btn -->
-            <button class="btn btn-primary" [disabled]="id$$() >= samples$$().length" (click)="onNext()">
+            <button class="btn btn-primary" [disabled]="id$$() >= samples$$().length" (click)="onNext()"
+            [ngClass]="{'btn-lg':isSmallView}">
                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </button>
         </div>
@@ -93,19 +97,28 @@ import { ProjectUnavailableComponent } from '../project-unavailable/project-unav
   `
 })
 export class GalleryDetailsComponent {
-    #samplesService = inject(SamplesService);
     #route = inject(ActivatedRoute);
     #router = inject(Router);
-    #sub = new Subscription();
+    #samplesService = inject(SamplesService);
+    #mqs = inject(MediaQueryService);
+    #allSubs = new Subscription();
 
     contentAvailable = false;
+    isSmallView: boolean | null = false;
 
     id$$ = signal(0);
     samples$$ = this.#samplesService.samples$$;
     sample$$ = computed(() => this.updateSample());
 
     ngOnInit() {
-        this.#sub = this.#route.params.subscribe(params => this.id$$.set(+params['id']));
+        this.#allSubs.add(
+            this.#route.params.subscribe(params => this.id$$.set(+params['id']))
+        );
+
+        this.#allSubs.add(
+            this.#mqs.isSmallView$
+                .subscribe(isSmallView => this.isSmallView = isSmallView)
+        );
     }
 
     onNext() {
@@ -133,6 +146,6 @@ export class GalleryDetailsComponent {
     }
 
     ngOnDestroy() {
-        this.#sub.unsubscribe();
+        this.#allSubs.unsubscribe();
     }
 }
