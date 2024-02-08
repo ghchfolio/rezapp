@@ -27,6 +27,7 @@ import { GallerySearchResultCountComponent } from "../gallery-search-result-coun
                     </li>
                 </ul>
 
+                 <app-gallery-search-result-count />
                  <app-gallery-search />
 
                 <div class="row mt-5">
@@ -34,8 +35,6 @@ import { GallerySearchResultCountComponent } from "../gallery-search-result-coun
                         <button type="button" class="btn btn-primary btn-lg w-50" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
                     </div>
                 </div>
-
-                 <app-gallery-search-result-count />
             </div>
         </div>
     </div>
