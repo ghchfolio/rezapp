@@ -16,13 +16,13 @@ import { NgClass } from '@angular/common';
             <div class="col-lg-6">
                 <input name="term" class="form-control text-dark bg-light" type="text" placeholder="Search" aria-label="Search"
                 [ngModel]="term"
-                [ngClass]="{'form-control-lg':isSmallView }"
+                [ngClass]="{'form-control-lg':isSmallView}"
                 (ngModelChange)="setSearchTerm($event)" />
             </div>
             <div class="col-lg-6">
                 <div class="text-center mt-2 mt-lg-0">
                     <button class="btn btn-light w-100" type="reset" (click)="onReset()"
-                    [ngClass]="{'btn-lg':isSmallView }">Reset</button>
+                    [ngClass]="{'btn-lg':isSmallView}">Reset</button>
                 </div>
             </div>
         </form>
@@ -69,7 +69,7 @@ export class GallerySearchComponent {
         this.#allSubs.add(
             this.#mqs.isSmallView$
                 .subscribe(isSmallView => this.isSmallView = isSmallView)
-        )
+        );
     }
 
     setSearchTerm(inputVal: string) {
