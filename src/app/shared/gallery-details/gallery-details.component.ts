@@ -55,17 +55,17 @@ import { MediaQueryService } from '../../services/media-query.service';
     <div class="row mt-5">
         <div class="col text-center">
             <!-- prev btn -->
-            <button class="btn btn-primary" [disabled]="id$$() <= 1" (click)="onPrev()"
+            <button class="btn btn-light" [disabled]="id$$() <= 1" (click)="onPrev()"
             [ngClass]="{'btn-lg':isSmallView}">
                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
             </button>
 
             <!-- go btn -->
-            <button class="btn btn-primary mx-4" [disabled]="!contentAvailable" (click)="onGo()"
+            <button class="btn btn-light fw-bold mx-4" [disabled]="!contentAvailable" (click)="onGo()"
             [ngClass]="{'btn-lg':isSmallView}">GO</button>
 
             <!-- next btn -->
-            <button class="btn btn-primary" [disabled]="id$$() >= samples$$().length" (click)="onNext()"
+            <button class="btn btn-light" [disabled]="id$$() >= samples$$().length" (click)="onNext()"
             [ngClass]="{'btn-lg':isSmallView}">
                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
             </button>

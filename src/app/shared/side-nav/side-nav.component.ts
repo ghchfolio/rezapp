@@ -32,7 +32,7 @@ import { GallerySearchResultCountComponent } from "../gallery-search-result-coun
 
                 <div class="row mt-5">
                     <div class="col text-center">
-                        <button type="button" class="btn btn-primary btn-lg w-50" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
+                        <button type="button" class="btn btn-light btn-lg w-50" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
                     </div>
                 </div>
             </div>
