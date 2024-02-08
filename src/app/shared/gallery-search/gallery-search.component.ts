@@ -4,26 +4,25 @@ import { BehaviorSubject, Subscription, debounceTime, distinctUntilChanged } fro
 import { GallerySearchService } from '../../services/gallery-search.service';
 import { GalleryPageIsActiveService } from '../../services/gallery-page-is-active.service';
 import { MediaQueryService } from '../../services/media-query.service';
+import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'app-gallery-search',
     standalone: true,
-    imports: [FormsModule],
+    imports: [FormsModule, NgClass],
     template: `
     @if (isGalleryPage) {
         <form id="search" class="row g-3" role="search">
             <div class="col-lg-6">
                 <input name="term" class="form-control text-dark bg-light" type="text" placeholder="Search" aria-label="Search"
                 [ngModel]="term"
+                [ngClass]="{'form-control-lg':isSmallView }"
                 (ngModelChange)="setSearchTerm($event)" />
             </div>
             <div class="col-lg-6">
-                <div class="d-flex justify-content-between">
-                    <button class="btn btn-light w-50" type="reset" (click)="onReset()">Reset</button>
-
-                    @if(isSmallView) {
-                        <button type="button" class="btn btn-primary w-50 ms-3" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
-                    }
+                <div class="text-center mt-2 mt-lg-0">
+                    <button class="btn btn-light w-100" type="reset" (click)="onReset()"
+                    [ngClass]="{'btn-lg':isSmallView }">Reset</button>
                 </div>
             </div>
         </form>
@@ -36,9 +35,9 @@ import { MediaQueryService } from '../../services/media-query.service';
     `
 })
 export class GallerySearchComponent {
-    #gallerySearchService = inject(GallerySearchService);
+    #gss = inject(GallerySearchService);
     #mqs = inject(MediaQueryService);
-    #gpia = inject(GalleryPageIsActiveService);
+    #gpias = inject(GalleryPageIsActiveService);
 
     #termSubj$ = new BehaviorSubject('');
     #allSubs = new Subscription();
@@ -49,12 +48,12 @@ export class GallerySearchComponent {
 
     ngOnInit() {
         this.#allSubs.add(
-            this.#gallerySearchService.getSearchTerm()
+            this.#gss.getSearchTerm()
                 .subscribe(term => this.term = term)
         );
 
         this.#allSubs.add(
-            this.#gpia.isGalleryPage$
+            this.#gpias.isGalleryPage$
                 .subscribe(isGalleryPg => this.isGalleryPage = isGalleryPg)
         );
 
@@ -64,7 +63,7 @@ export class GallerySearchComponent {
                     distinctUntilChanged(),
                     debounceTime(500)
                 )
-                .subscribe(term => this.#gallerySearchService.setSearchTerm(term))
+                .subscribe(term => this.#gss.setSearchTerm(term))
         );
 
         this.#allSubs.add(
