@@ -1,4 +1,4 @@
-import { ApplicationRef, Injectable, inject } from '@angular/core';
+import { ApplicationRef, Injectable, inject, isDevMode } from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
 import { concat, interval } from 'rxjs';
 import { first } from 'rxjs/operators';
@@ -14,14 +14,20 @@ export class CheckForUpdateService {
     constructor(appRef: ApplicationRef, updates: SwUpdate) {
         // Allow app to stabilize first, before starting
         const appIsStable$ = appRef.isStable.pipe(first(isStable => isStable === true));
-        const hr = 1; // 1hr or 0.0125 (40 secs)
+        
+        let hr = 1; // 1hr in prod env
+        if (isDevMode() || window.location.toString().includes(':8080')) hr = 0.0125; // 0.0125 (40 secs) in dev env
+
         const myInterval$ = interval(hr * 60 * 60 * 1000);
         const myIntervalOnceAppIsStable$ = concat(appIsStable$, myInterval$);
 
         myIntervalOnceAppIsStable$.subscribe(async () => {
             try {
                 const updateFound = await updates.checkForUpdate();
-                // console.log(updateFound ? 'A new version is available.' : 'Already on the latest version.');
+
+                if (isDevMode() || window.location.toString().includes(':8080')) {
+                    console.log(updateFound ? 'A new version is available.' : 'Already on the latest version.');
+                }
 
                 if (updateFound) {
                     const newAppVersioInfo: IModalProps = {
@@ -37,9 +43,6 @@ export class CheckForUpdateService {
                     }
 
                     this.#modalService.setModal(newAppVersioInfo);
-                    // if (window.confirm('A new version is available.\nReload the page now?')) {
-                    //     window.document.location.reload();
-                    // }
                 }
             } catch (err) {
                 console.error('Failed to check for updates:', err);
