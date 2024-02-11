@@ -61,26 +61,11 @@ export class AppComponent {
     }
 
     private updatePgTitleAfterRouted() {
-        const navBarEl = document.getElementById('navbarNav');
-
         this.#router.events.subscribe(event => {
-            if ((event instanceof NavigationEnd)) {
-                if (navBarEl !== null) this.setPageTitle(event.url.toString());
-                window.scrollTo(0, 0);
-            }
+            if ((event instanceof NavigationEnd)) window.scrollTo(0, 0);
         });
     }
 
-    private setPageTitle(str: string) {
-        const arr: string[] = str.split('/');
-        const title: string = arr[1];
-        const titleArr: string[] = title.split('');
-
-        if (titleArr[0] !== undefined) {
-            titleArr[0] = titleArr[0].toUpperCase();
-            this.pgTitle = titleArr.join('');
-        }
-    }
 
     ngOnDestroy() {
         this.#viewPortSub.unsubscribe();
