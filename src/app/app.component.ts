@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, isDevMode } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { MediaQueryService } from './services/media-query.service';
@@ -38,6 +38,14 @@ export class AppComponent {
     gradientBgEl?: Element | null;
     isSmallView?: boolean | null;
 
+    ngOnInit() {
+        if (!isDevMode()) {
+            let gaScript = document.createElement('script');
+            gaScript.setAttribute('src', './assets/js/ga.js');
+            document.head.appendChild(gaScript);
+        }
+    }
+
     ngAfterViewInit() {
         this.updatePgTitleAfterRouted();
         this.gradientBgEl = document.getElementById('gradientBg');
@@ -65,7 +73,6 @@ export class AppComponent {
             if ((event instanceof NavigationEnd)) window.scrollTo(0, 0);
         });
     }
-
 
     ngOnDestroy() {
         this.#viewPortSub.unsubscribe();
