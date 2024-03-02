@@ -15,20 +15,12 @@ import { BarComponent } from '../../shared/bar/bar.component';
 
                 <!-- certs -->
                 <dl>
-                    <dt>Recent Certificates</dt>
-                    <dd>RXJS 101</dd>
-                </dl>
-
-                <dl>
-                    <dt>In-Progress Certificates</dt>
-                    <dd>ASP .Net Core Razor Pages</dd>
-                </dl>
-
-                <dl>
-                    <dt>Older Certificates (4+ yrs.)</dt>
-                    <dd>Angular Progressive Web Apps</dd>
-                    <dd>JavaScript Debugging Crash Course</dd>
-                    <dd>Angular Progressive Web Apps</dd>
+                    <dt>Certificates</dt>
+                    <dd>RxJS 101 (completed January 2024)</dd>
+                    <dd>Express.js, Node.js & MongoDB (completed July 2022)</dd>
+                    <dd>JavaScript Debugging Crash Course (completed July 2019)</dd>
+                    <dd>Angular Progressive Web Apps Masterclass (completed June 2019)</dd>
+                    <dd>JavaScript: Understanding the Weird Parts (completed June 2019)</dd>
                 </dl>
 
                 <app-bar class="my-4" />
